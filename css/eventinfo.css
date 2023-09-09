@@ -1,0 +1,38 @@
+
+.hidden {display: none;}
+.drkMode {color: white;}
+.drkMode p {color: #A19595;}
+.visibleTablet { display: none;}
+
+h1 {
+    font-family:'Lato';
+    font-size: 60px;
+    font-weight: bold;
+}
+
+h2 {
+    font-family:'Lato';
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h3 { 
+    font-family:'Poppins';
+    font-size: 30px;
+    font-weight: bold;
+}
+
+a, li, i { 
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;0
+}
+/* MOBILE */
+@media screen and (max-width: 768px) { 
+}
+/* TABLET */
+@media screen and (min-width: 768px) { 
+}
+/* DESKTOP */
+@media screen and (min-width: 1200px) { 
+}
