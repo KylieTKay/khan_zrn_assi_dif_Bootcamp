@@ -24,6 +24,7 @@ h3 {
 }
 
 a, li, i { 
+    font-family: 'Poppins';
     color: white;
     text-decoration: none;
     transition: 0.3s ease-in-out;
@@ -37,9 +38,181 @@ p.body {
     font-size: x-large;
 }
 
+
+#main-header {
+    background-color: #b3272d;
+    height: 180px;
+    max-width: 1900px;
+    display: block;
+}
+
+.mainNav {
+    background: #b3272d;
+    height: 80px;
+    max-width: 1920px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.mainNav>menu {
+display: flex;
+flex-direction: row;
+margin: 20px 0;
+list-style: none;
+}
+
+.mainNav>menu>a:first-child{
+    margin-left: 0;
+}
+.mainNav>menu>a:last-child{
+    margin-right: 0;
+    border-right: none;
+}
+.mainNav>menu>a {
+    margin-left: 25px;
+    padding-right: 20px;
+    border-right: 4px solid white;
+    font-size: 20px;
+    align-self: center;
+    transition: .3s ease-in-out;
+}
+.mainNav>menu>a:hover {
+    color: #4d0000;
+    scale: 1.1;
+}
+
+#main-header>div {
+    background: black;
+    height: 100px;
+}
+
+#main-header>div>a { margin: 30px 0;}
+
+#hamburger {display: none;}
+
+
+#logoCon {
+    height: 80px;
+    max-width: 1920px;
+    display: flex;
+}
+#logoMobile{
+ display: none;   
+}
+
+
 /* MOBILE */
 @media screen and (max-width: 768px) { 
-            
+ 
+    
+    #hamburger {
+        display: block;
+        transition: all .5s ease;
+        border: none;  
+        background: none;
+        font-size: 40px;
+        height: fit-content;
+        width: fit-content;
+        margin: auto 0;
+    }
+
+
+     #hamburger.expanded {
+        transform: rotate(90deg);
+     }
+     
+     #burger-con {
+        display: none;
+     }
+     
+     #burger-con.slide-toggle {
+        display: grid;
+    }
+    
+#main-header {
+    background-color: #4d0000;
+
+    max-height: fit-content;
+    height: 100px;
+    max-width: 768px;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    /* align-items: center; */
+    padding: 20px 30px;
+}
+
+#main-header>button{ grid-column: 1;}
+#main-header>button:hover {
+    scale: 1.1;}
+
+
+.mainNav {
+    grid-column: 1;
+    background: none;
+    height: 80px;
+    max-width: 768px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: unset;
+}
+
+.mainNav>menu {
+    background: #4d0000;
+    width: fit-content;
+display: inline-flex;
+flex-direction: column;
+margin: 20px 0;
+list-style: none;
+}
+
+.mainNav>menu>a:first-child{
+    border-top: unset;
+    margin-left: 40px;
+}
+.mainNav>menu>a:last-child{
+    margin-right: 40px;
+    border-right: none;
+}
+.mainNav>menu>a {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-right: unset;
+    border-top: 4px solid white;
+    border-right: unset;
+    font-size: 20px;
+    align-self: center;
+    transition: .3s ease-in-out;
+}
+.mainNav>menu>a:hover {
+    color: #4d0000;
+    scale: 1.1;
+}
+
+
+#main-header>div {
+    background: none;
+    height: unset;
+}
+
+#main-header>div>a { margin: 0;}
+
+#logoCon {
+display: none;
+}
+#logoMobile{
+    display: flex;
+    grid-row: 1;
+    grid-column: 2;
+    justify-content: center;
+}
+/* #logoMobile img{  align-self: center; justify-self: center;} */
+
+
+
     #eventInfoHero{
         max-width: 768px;
         height: 845px;
@@ -75,6 +248,7 @@ p.body {
 }
 /* TABLET */
 @media screen and (min-width: 768px) { 
+
         
     #eventInfoHero{
         max-width: 1200px;

@@ -12,10 +12,10 @@ img, embed, object, video, picture {
     box-sizing: border-box; 
   }
   
-  *, *::before, *::after {
+  /* *, *::before, *::after {
     box-sizing: inherit; 
   }
-  
+   */
   /* ---Mini CSS reset--- */
   
   body, p, h1, h2, h3, h4, h5 {
