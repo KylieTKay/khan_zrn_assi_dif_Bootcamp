@@ -21,8 +21,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit; /*causes the element for which it is specified to take the Computed value of the property from its parent element.*/
 	vertical-align: baseline; /*Align the baseline of the element with the baseline of its parent.*/
 }
 /* HTML5 display-role reset for older browsers */
