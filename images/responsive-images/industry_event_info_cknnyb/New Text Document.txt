@@ -1,0 +1,7 @@
+<img
+sizes="(max-width: 670px) 100vw, 670px"
+srcset="
+industry_event_info_cknnyb_c_scale,w_200.jpg 200w,
+industry_event_info_cknnyb_c_scale,w_670.jpg 670w"
+src="industry_event_info_cknnyb_c_scale,w_670.jpg"
+alt="">

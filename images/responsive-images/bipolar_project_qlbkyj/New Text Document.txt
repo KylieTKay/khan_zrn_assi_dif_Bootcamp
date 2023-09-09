@@ -1,0 +1,8 @@
+<img
+sizes="(max-width: 945px) 100vw, 945px"
+srcset="
+bipolar_project_qlbkyj_c_scale,w_200.jpg 200w,
+bipolar_project_qlbkyj_c_scale,w_800.jpg 800w,
+bipolar_project_qlbkyj_c_scale,w_945.jpg 945w"
+src="bipolar_project_qlbkyj_c_scale,w_945.jpg"
+alt="">
