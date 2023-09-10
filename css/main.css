@@ -1,4 +1,4 @@
-
+/* GENERAL */
 .hidden {display: none;}
 .drkMode {color: white;}
 .drkMode p {color: #A19595;}
@@ -44,68 +44,68 @@ body { margin: 0; }
 
 /* HEADER */
 
-#main-header {
-    background-color: #b3272d;
-    height: 180px;
-    max-width: 1900px;
-    display: block;
-}
+    #main-header {
+        background-color: #b3272d;
+        height: 180px;
+        max-width: 1900px;
+        display: block;
+    }
 
-.mainNav {
-    background: #b3272d;
-    height: 80px;
-    max-width: 1920px;
+    .mainNav {
+        background: #b3272d;
+        height: 80px;
+        max-width: 1920px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .mainNav>menu {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-}
+    margin: 20px 0;
+    list-style: none;
+    }
 
-.mainNav>menu {
-display: flex;
-flex-direction: row;
-margin: 20px 0;
-list-style: none;
-}
+    .mainNav>menu>a:first-child{
+        margin-left: 0;
+    }
+    .mainNav>menu>a:last-child{
+        margin-right: 0;
+        border-right: none;
+    }
+    .mainNav>menu>a {
+        margin-left: 25px;
+        padding-right: 20px;
+        border-right: 4px solid white;
+        font-size: 20px;
+        align-self: center;
+        transition: .3s ease-in-out;
+    }
+    .mainNav>menu>a:hover {
+        color: #4d0000;
+        scale: 1.1;
+    }
 
-.mainNav>menu>a:first-child{
-    margin-left: 0;
-}
-.mainNav>menu>a:last-child{
-    margin-right: 0;
-    border-right: none;
-}
-.mainNav>menu>a {
-    margin-left: 25px;
-    padding-right: 20px;
-    border-right: 4px solid white;
-    font-size: 20px;
-    align-self: center;
-    transition: .3s ease-in-out;
-}
-.mainNav>menu>a:hover {
-    color: #4d0000;
-    scale: 1.1;
-}
+    #main-header>div {
+        background: black;
+        height: 100px;
+    }
 
-#main-header>div {
-    background: black;
-    height: 100px;
-}
+    #main-header>div>a { margin: 30px 0;}
 
-#main-header>div>a { margin: 30px 0;}
-
-#hamburger {display: none;}
+    #hamburger {display: none;}
 
 
-#logoCon {
-    height: 80px;
-    max-width: 1920px;
-    display: flex;
-}
-#logoMobile{
- display: none;   
-}
-
+    #logoCon {
+        height: 80px;
+        max-width: 1920px;
+        display: flex;
+    }
+    #logoMobile{
+    display: none;   
+    }
+/*  */
 /* INDEX.HTML */
 
 
@@ -121,113 +121,129 @@ list-style: none;
 
 /* FOOTER */
 
+
+
+
+
+
+
 /* MOBILE*/
 @media screen and (max-width: 768px) { 
     /* HEADER */
     
-    #hamburger {
-        display: block;
-        transition: all .5s ease;
-        border: none;  
-        background: none;
-        font-size: 40px;
-        height: fit-content;
-        width: fit-content;
-        margin: auto 0;
-    }
-
-
-     #hamburger.expanded {
-        transform: rotate(90deg);
-     }
-     
-     #burger-con {
-        display: none;
-     }
-     
-     #burger-con.slide-toggle {
-        display: grid;
-    }
+        #hamburger {
+            display: block;
+            transition: all .5s ease;
+            border: none;
+            background: none;
+            font-size: 40px;
+            height: fit-content;
+            width: fit-content;
+            margin: auto 0;
+        }
     
-#main-header {
-    background-color: #4d0000;
-
-    max-height: fit-content;
-    height: 100px;
-    max-width: 768px;
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
-    /* align-items: center; */
-    padding: 20px 30px;
-}
-
-#main-header>button{ grid-column: 1;}
-#main-header>button:hover {
-    scale: 1.1;}
-
-
-.mainNav {
-    grid-column: 1;
-    background: none;
-    height: 80px;
-    max-width: 768px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    padding: unset;
-}
-
-.mainNav>menu {
-    background: #4d0000;
-    width: fit-content;
-display: inline-flex;
-flex-direction: column;
-margin: 20px 0;
-list-style: none;
-}
-
-.mainNav>menu>a:first-child{
-    border-top: unset;
-    margin-left: 40px;
-}
-.mainNav>menu>a:last-child{
-    margin-right: 40px;
-    border-right: none;
-}
-.mainNav>menu>a {
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 30px;
-    padding-top: 30px;
-    padding-right: unset;
-    border-top: 4px solid white;
-    border-right: unset;
-    font-size: 20px;
-    align-self: center;
-    transition: .3s ease-in-out;
-}
-.mainNav>menu>a:hover {
-    color: #4d0000;
-    scale: 1.1;
-}
-
-
-#main-header>div {
-    background: none;
-    height: unset;
-}
-
-#main-header>div>a { margin: 0;}
-
-#logoCon {
-display: none;
-}
-#logoMobile{
-    display: flex;
-    grid-row: 1;
-    grid-column: 2;
-    justify-content: center;
-}
+    
+        #hamburger.expanded {
+            transform: rotate(90deg);
+        }
+    
+        #burger-con {
+            display: none;
+        }
+    
+        #burger-con.slide-toggle {
+            display: grid;
+        }
+    
+        #main-header {
+            background-color: #4d0000;
+    
+            max-height: fit-content;
+            height: 100px;
+            max-width: 768px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* align-items: center; */
+            padding: 20px 30px;
+        }
+    
+        #main-header>button {
+            grid-column: 1;
+        }
+    
+        #main-header>button:hover {
+            scale: 1.1;
+        }
+    
+    
+        .mainNav {
+            grid-column: 1;
+            background: none;
+            height: 80px;
+            max-width: 768px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            padding: unset;
+        }
+    
+        .mainNav>menu {
+            background: #4d0000;
+            width: fit-content;
+            display: inline-flex;
+            flex-direction: column;
+            margin: 20px 0;
+            list-style: none;
+        }
+    
+        .mainNav>menu>a:first-child {
+            border-top: unset;
+            margin-left: 40px;
+        }
+    
+        .mainNav>menu>a:last-child {
+            margin-right: 40px;
+            border-right: none;
+        }
+    
+        .mainNav>menu>a {
+            margin-left: 40px;
+            margin-right: 40px;
+            margin-bottom: 30px;
+            padding-top: 30px;
+            padding-right: unset;
+            border-top: 4px solid white;
+            border-right: unset;
+            font-size: 20px;
+            align-self: center;
+            transition: .3s ease-in-out;
+        }
+    
+        .mainNav>menu>a:hover {
+            color: #4d0000;
+            scale: 1.1;
+        }
+    
+    
+        #main-header>div {
+            background: none;
+            height: unset;
+        }
+    
+        #main-header>div>a {
+            margin: 0;
+        }
+    
+        #logoCon {
+            display: none;
+        }
+    
+        #logoMobile {
+            display: flex;
+            grid-row: 1;
+            grid-column: 2;
+            justify-content: center;
+        }
 
 
 
@@ -435,6 +451,74 @@ font-size: 40px;
     border-radius:  100%;
     transition: 0.5s ease-in-out;
 }
+
+ 
+    /* LIGHTBOX */
+
+    #lightBox {
+        position:absolute;
+        background: #4D0000;
+        max-width: 1660px;
+        height: 932px;
+        display: none; 
+        /* js: when a card is selected the light box display is flex */
+        flex-direction: row; 
+        /* justify-items: flex-start;  */
+        align-items: center; 
+        
+    }
+
+    .infoBlock {
+		width: 457px;
+		height: 932px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		background:  white;
+	}
+
+	.profileImg {
+		width: 457px;
+		height: 466px;
+	}
+
+    .infoBlock p {
+        text-align: center;
+        margin: 20px;
+    }
+
+    .profileDetails {
+        margin: 60px 40px 80px 40px;
+        height: 800px;
+		display: flex;
+		flex-direction: column;
+		align-items: normal;
+		justify-content: space-between;
+		flex-wrap: wrap;
+    }
+    .portfolioPreview {
+        width: 1125px;
+        min-width: 800px;
+		height: fit-content;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+    }
+    .previewMask {
+        width: 540px;
+        min-width: 300px;
+		height: 455px;
+    }
+    #previewMask {
+                background: url(../assets/desktop_images/team_rull_imgs/k_wireframe1.jpg) no-repeat;
+                background-size: cover;
+    }
+    #previewMask2 {
+                background: url(../assets/desktop_images/team_rull_imgs/k_wireframe2.jpg) no-repeat;
+                background-size: cover;
+    }
+
+
 }
 /* TABLET */
 @media screen and (min-width: 768px) {
@@ -619,6 +703,97 @@ justify-content:flex-end;
     border: none;
     color: #A19595;
 }
+
+
+
+
+
+
+/* FOOTER */
+
+#lightFooter {
+.footer-container {
+    background-color:white;
+    width: 1024px;
+    height: 525px;
+    overflow: hidden;
+}
+ 
+
+.footer-logo {
+    scale: 60%;
+    display: flex;
+    justify-content: left;
+    margin-left: -200px;
+}
+
+.footer-socialmedia {
+    display: inline-flex;
+    flex-direction: row;
+    color: var(--bg);
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    margin-left: 670px;
+    margin-top: 215px;
+    scale: 220%;
+    width: fit-content;
+    flex: wrap;
+}
+
+.socials-text {
+    order: -1;
+    margin-right: -70px;
+    margin-top: -70px;
+    font-weight: 500;
+}
+
+.footer-socialmedia a {
+    margin-right: 10px;
+}
+
+.sm_header {
+    font-weight: 500;
+    margin-right: 30px;
+}
+
+.lightFooter.footer-nav {
+    display: flex;
+    flex-direction: column;
+    color: var(--bg);
+    justify-content: left;
+    margin-left: -190px;
+    padding: 20rem;
+    margin-top: -450px;
+}
+
+.footer-nav a {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.footer-nav p {
+    font-size: 16px;
+    max-width: 200px;
+    padding: .5rem;
+}
+
+.copyright{
+    position: sticky;
+    width: 100%;
+    text-align: center;
+    color: var(--bg);
+    margin-top: -20px;
+}
+:root {
+--header: rgba(226, 35, 36);
+--type: rgba(255, 255, 255);
+--bg: rgba(0, 0, 0);
+--con: rgba(77, 0, 0);
+}
+/* color scheme / pallete */
+/*  */
+}
 }
 
 /* DESK */
@@ -627,18 +802,55 @@ justify-content:flex-end;
 .visibleTablet{display: none;}
 
 /* MAIN INDEX */
+ /* #indexHTML  { */
+    
+    :root {
+    --header: rgba(226, 35, 36);
+    --type: rgba(255, 255, 255);
+    --bg: rgba(0, 0, 0);
+    --con: rgba(77, 0, 0);
+}
+color scheme / pallete
+
+/* Reset default margin and padding */
+body, h2, p {
+    margin: 0;
+    padding: 0;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+    body {
+        font-family: 'Lato', sans-serif;
+        background-color: black;
+        margin: 0;
+       /* Remove default margin */
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 16px;
+    }
     #small-top-logo {
-        position: absolute;
-        top: 0px;
-        left: 30px;
+        margin-left: 30px;
+        margin-top: -110px;
     }
-    
     #hero-img {
-        margin-top: 50px;
-        width: 100%;
-        height: auto; 
+        max-width: 1920px;
+        height: 900px;
+        background: url(../images/heroImg_D.svg) no-repeat;
+        background-size: contain;
     }
-    
     .white-box-button {
         background: linear-gradient(to right, black, red);
         color: white;
@@ -651,84 +863,784 @@ justify-content:flex-end;
         align-items: center;
         font-size: 32px;
         line-height: 80px;
-        margin-bottom: 30px;
-    }
-    
-    .program-description {
-        background-color: black;
-        color: white;
-        padding: 20px;
-    }
-    
-    .program-description h2 {
-        margin-bottom: 10px;
-        text-align: center;
-    }
-    
-    .program-description p {
-        margin-bottom: 20px;
-        text-align: center; }
-    
-    .menu-grid {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .menu-grid a {
-        text-decoration: none;
-        color: blue;
-        font-weight: bold;
-    }
-    
-    .menu-grid p {
-        display: none; 
-        margin-top: 10px;
-    }
-    
-    .menu-grid li:hover p {
-        display: block;
-        color: white;
-    }
-    
-    .image-gallery {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-        padding: 20px;
-    }
-    
-    .image-row {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        max-width: 900px;
-        width: 100%;
+        margin-top: 465px;
     }
 
     
-    .features {
-        background-color: black;
-        color: white;
-        padding: 20px;
-    }
-    
-    .features h2 {
-        margin-bottom: 10px;
-        text-align: center;
-    }
-    
-    .features p {
-        margin-bottom: 20px;
-        text-align: center; }
-    
-    .features h3 {
-        display: inline-block; 
-        margin: 20px 100px; 
-        margin-left: 90px;
-    }
+.program-description {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+.program-description h2 {
+    font-size: 44px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.program-description p {
+    color: #A19595;
+    font-size: 20px;
+    padding: 0 300px;
+    margin-bottom: 20px;
+    text-align: center;
+   /* Center-align paragraphs */
+}
+.programFeatures {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    margin-top: 30px;
+}
+.feature {
+    padding-right: 80px;
+    padding-left: 80px;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+.icon {
+    height: 30px;
+    width: 30px;
+    background-color: #A19595;
+    display: block;
+    border-radius: 100%;
+    padding: 5px;
+    margin-right: 20px;
+}
+.drkMode p {
+    color: #A19595;
+}
+.drkMode {
+    color: white;
+}
+p.body {
+}
+p.para {
+}
+li {
+    list-style: none;
+}
+.sectionText {
+    text-align: center;
+}
+.sectionText > h2 {
+    margin-bottom: 40px;
+}
+.sectionText > p {
+    margin-bottom: 40px;
+}
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    max-width: 100%;
+   /* Set a maximum width for the gallery */
+    margin: 0 auto;
+   /* Center the gallery horizontally */
+}
+#student-portfolios-gallery {
+    max-height: 1020px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    overflow-wrap: unset;
+}
+.image-row {
+    display: flex;
+    justify-content: center;
+    flex-basis: calc(33.33% - 20px);
+   /* 3 columns with 10px gap */
+    flex-grow: 1;
+}
+.image-cell {
+    position: relative;
+   /* Relative positioning for the image-cell */
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-cell img {
+    margin: -30px;
+    width: 640px;
+   /* Set the width to 640px */
+    height: 320px;
+   /* Set the height to 320px */
+    object-fit: cover;
+   /* Maintain aspect ratio and cover container */
+    display: block;
+    transition: opacity 0.3s;
+   /* Add a smooth transition for opacity change */
+    border: none;
+   /* Remove the border */
+}
+.image-cell:hover img {
+    opacity: 0.7;
+   /* Adjust the opacity as needed on hover */
+}
+.image-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+   /* Semi-transparent background for the title */
+    color: white;
+    padding: 5px 10px;
+    font-size: 80px;
+   /* Set the font size to 80px */
+    display: none;
+   /* Initially hide the title */
+}
+.image-cell:hover .image-title {
+    display: block;
+   /* Show the title on hover */
+}
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+    .image-row {
+        flex-basis: calc(50% - 20px);
+       /* 2 columns with 10px gap */
+   }
+}
+@media (max-width: 480px) {
+    .image-row {
+        flex-basis: calc(100% - 20px);
+       /* 1 column with 10px gap */
+   }
+}
+h1.student-name {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7);
+   /* Adjust the opacity as needed */
+    padding: 10px;
+    font-size: 16px;
+    transition: opacity 0.3s;
+   /* Add a smooth transition for opacity change */
+}
+img {
+    max-width: 945px;
+    height: 320px;
+    margin: 5px;
+}
+.features {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+   /* Center-align content within the section */
+}
+.features h2 {
+    font-size: 44px;
+    margin-bottom: 10px;
+}
+.features .grey-text {
+    color: #A19595;
+}
+.features p {
+    padding: 0 200px;
+   /* Add padding to the left and right of the paragraphs */
+    color: #A19595;
+    font-size: 25px;
+    margin-bottom: 80px;
+    text-align: center;
+   /* Center-align paragraphs */
+}
+.features h3 {
+    font-size: 24px;
+    margin-top: 20px;
+   /* Adjust the margin-top for h3 elements */
+    display: inline-block;
+   /* Display h3 elements in a line */
+    margin: 20px 10px;
+   /* Add margin between h3 elements */
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.graduates h1 {
+    font-size: 70px;
+    text-align: center;
+   /* Center-align the text within the section */
+    margin-top: 20px;
+}
+.graduates h3 {
+    font-size: 32px;
+    text-align: center;
+   /* Center-align the text within the section */
+    margin-top: 20px;
+}
+/* Add space between h1 and h3 headers */
+h1, h3 {
+    margin-bottom: 20px;
+   /* Adjust the margin as needed */
+    color: white;
+}
+/* Style for the image section */
+.image-section {
+    display: flex;
+    align-items: center;
+   /* Vertically center content */
+}
+/* Style for the image container on the left */
+.image-container {
+    flex: 1;
+   /* Take up one-third of the available space */
+    text-align: right;
+   /* Align the image to the right within the container */
+}
+/* Style for the image */
+.image-container img {
+    padding-top: 100px;
+    height: auto;
+    width: 945px;
+}
+/* Style for the text container on the right */
+.text-container {
+    font-size: 40px;
+    flex: 2;
+   /* Take up two-thirds of the available space */
+    padding: 50px;
+   /* Add some spacing around the text */
+}
+/* Style for the headers and paragraph */
+.title {
+    color: white;
+   /* Text color */
+    font-size: 25px;
+   /* Adjust the font size as needed */
+    padding-bottom: 60px;
+}
+.subtitle {
+    color: white;
+   /* Text color */
+    font-size: 25px;
+   /* Adjust the font size as needed */
+    margin-bottom: 50px;
+}
+.description-1 {
+    color: white;
+   /* Text color */
+    font-size: 25px;
+   /* Adjust the font size as needed */
+    margin-bottom: 15px;
+}
+.description-11 {
+    color: white;
+   /* Text color */
+    font-size: 25px;
+   /* Adjust the font size as needed */
+    margin-bottom: 15px;
+}
+.description-2 {
+    color: white;
+   /* Text color */
+    font-size: 25px;
+   /* Adjust the font size as needed */
+    margin-bottom: 10px;
+}
+.description-3 {
+    color: white;
+   /* Text color */
+    font-size: 25px;
+   /* Adjust the font size as needed */
+    margin-bottom: 25px;
+}
+.description-4 {
+    color: white;
+   /* Text color */
+    font-size: 25px;
+   /* Adjust the font size as needed */
+}
+.card-conatiner {
+    display: flex;
+    justify-content: space-between;
+}
+.card-container h2 {
+    font-size: 40px;
+}
+.card-container h3 {
+    font-size: 30px;
+}
+.card-container p {
+    padding: 10px;
+    margin: 10px;
+    font-size: 28px;
+}
+.card {
+    margin: 2%;
+    float: left;
+    flex: 0 1 calc(33.33% - 20px);
+    background-color: lightgrey;
+    width: 540px;
+    text-align: center;
+    border-radius: 115px;
+    line-height: 1.8;
+    margin-top: 100px;
+    box-sizing: border-box;
+}
+#ch1, #ch2, #ch3 {
+    display: none;
+}
+#ch1:checked ~ .content, #ch2:checked ~ .content, #ch3:checked ~ .content {
+    display: block;
+}
+#ch1:checked ~ label, #ch2:checked ~ label, #ch3:checked ~ label {
+    display: none;
+}
+.content {
+    display: none;
+}
+label {
+    display: inline-block;
+    cursor: pointer;
+    color: grey;
+    padding: 3px 13px;
+    border-radius: 3px;
+    margin-top: 12px;
+    font-size: 20px;
+   /* Set the font size for the "Show Less" button to 20px */
+    transition: background-color 0.3s, color 0.3s;
+   /* Add transition effects */
+}
+label:hover {
+    color: white;
+   /* Change text color on hover */
+}
+.textbox-img {
+    display: block;
+    width: 100%;
+   /* Make the image responsive */
+}
+/* Reset default margin and padding */
+body, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: red;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+header nav {
+    margin-right: 20px;
+}
+header nav a {
+    border-right: 3px solid white;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: black;
+    margin: 0;
+   /* Remove default margin */
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+}
+#small-top-logo {
+    margin-left: 30px;
+    margin-top: -110px;
+}
+#hero-img {
+    max-width: 1920px;
+    height: 900px;
+    background: url(../images/heroImg_D.svg) no-repeat;
+    background-size: contain;
+}
+.white-box-button {
+    background: linear-gradient(to right, black, red);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+    width: 400px;
+    text-align: center;
+    border-radius: 20px;
+    align-items: center;
+    font-size: 32px;
+    line-height: 80px;
+    margin-top: 465px;
+}
+.program-description {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+.program-description h2 {
+    font-size: 44px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.program-description p {
+    color: #A19595;
+    font-size: 20px;
+    padding: 0 300px;
+    margin-bottom: 20px;
+    text-align: center;
+   /* Center-align paragraphs */
+}
+.programFeatures {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    margin-top: 30px;
+}
+.feature {
+    padding-right: 80px;
+    padding-left: 80px;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+.icon {
+    height: 30px;
+    width: 30px;
+    background-color: #A19595;
+    display: block;
+    border-radius: 100%;
+    padding: 5px;
+    margin-right: 20px;
+}
+.drkMode p {
+    color: #A19595;
+}
+.drkMode {
+    color: white;
+}
+p.body {
+}
+p.para {
+}
+li {
+    list-style: none;
+}
+.sectionText {
+    text-align: center;
+}
+.sectionText > h2 {
+    margin-bottom: 40px;
+}
+.sectionText > p {
+    margin-bottom: 40px;
+}
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    max-width: 100%;
+   /* Set a maximum width for the gallery */
+    margin: 0 auto;
+   /* Center the gallery horizontally */
+}
+#student-portfolios-gallery {
+    max-height: 1020px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    overflow-wrap: unset;
+}
+.image-row {
+    display: flex;
+    justify-content: center;
+    flex-basis: calc(33.33% - 20px);
+   /* 3 columns with 10px gap */
+    flex-grow: 1;
+}
+.image-cell {
+    position: relative;
+   /* Relative positioning for the image-cell */
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-cell img {
+    margin: -30px;
+    width: 640px;
+   /* Set the width to 640px */
+    height: 320px;
+   /* Set the height to 320px */
+    object-fit: cover;
+   /* Maintain aspect ratio and cover container */
+    display: block;
+    transition: opacity 0.3s;
+   /* Add a smooth transition for opacity change */
+    border: none;
+   /* Remove the border */
+}
+.image-cell:hover img {
+    opacity: 0.7;
+   /* Adjust the opacity as needed on hover */
+}
+.image-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+   /* Semi-transparent background for the title */
+    color: white;
+    padding: 5px 10px;
+    font-size: 80px;
+   /* Set the font size to 80px */
+    display: none;
+   /* Initially hide the title */
+}
+.image-cell:hover .image-title {
+    display: block;
+   /* Show the title on hover */
+}
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+    .image-row {
+        flex-basis: calc(50% - 20px);
+       /* 2 columns with 10px gap */
+   }
+}
+@media (max-width: 480px) {
+    .image-row {
+        flex-basis: calc(100% - 20px);
+       /* 1 column with 10px gap */
+   }
+}
+h1.student-name {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7);
+   /* Adjust the opacity as needed */
+    padding: 10px;
+    font-size: 16px;
+    transition: opacity 0.3s;
+   /* Add a smooth transition for opacity change */
+}
+img {
+    max-width: 945px;
+    height: 320px;
+    margin: 5px;
+}
+.features {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+   /* Center-align content within the section */
+}
+.features h2 {
+    font-size: 44px;
+    margin-bottom: 10px;
+}
+.features .grey-text {
+    color: #A19595;
+}
+.features p {
+    padding: 0 200px;
+   /* Add padding to the left and right of the paragraphs */
+    color: #A19595;
+    font-size: 25px;
+    margin-bottom: 80px;
+    text-align: center;
+   /* Center-align paragraphs */
+}
+.features h3 {
+    font-size: 24px;
+    margin-top: 20px;
+   /* Adjust the margin-top for h3 elements */
+    display: inline-block;
+   /* Display h3 elements in a line */
+    margin: 20px 10px;
+   /* Add margin between h3 elements */
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.graduates h1 {
+    font-size: 70px;
+    text-align: center;
+   /* Center-align the text within the section */
+    margin-top: 20px;
+}
+.graduates h3 {
+    font-size: 32px;
+    text-align: center;
+   /* Center-align the text within the section */
+    margin-top: 20px;
+}
+/* Add space between h1 and h3 headers */
+h1, h3 {
+    margin-bottom: 20px;
+   /* Adjust the margin as needed */
+    color: white;
+}
+/* Style for the image section */
+.image-section {
+    display: flex;
+    align-items: center;
+   /* Vertically center content */
+}
+/* Style for the image container on the left */
+.image-container {
+    flex: 1;
+   /* Take up one-third of the available space */
+    text-align: right;
+   /* Align the image to the right within the container */
+}
+/* Style for the image */
+.image-container img {
+    padding-top: 100px;
+    height: auto;
+    width: 945px;
+}
+/* Style for the text container on the right */
+.text-container {
+    font-size: 40px;
+    flex: 2;
+   /* Take up two-thirds of the available space */
+    padding: 50px;
+   /* Add some spacing around the text */
+}
+/* Style for the headers and paragraph */
+.title {
+    color: white;
+   /* Text color */
+    font-size: 25px;
+   /* Adjust the font size as needed */
+    padding-bottom: 60px;
+}
+.subtitle {
+    color: white;
+   /* Text color */
+    font-size: 25px;
+   /* Adjust the font size as needed */
+    margin-bottom: 50px;
+}
+.description-1 {
+    color: white;
+   /* Text color */
+    font-size: 25px;
+   /* Adjust the font size as needed */
+    margin-bottom: 15px;
+}
+.description-11 {
+    color: white;
+   /* Text color */
+    font-size: 25px;
+   /* Adjust the font size as needed */
+    margin-bottom: 15px;
+}
+.description-2 {
+    color: white;
+   /* Text color */
+    font-size: 25px;
+   /* Adjust the font size as needed */
+    margin-bottom: 10px;
+}
+.description-3 {
+    color: white;
+   /* Text color */
+    font-size: 25px;
+   /* Adjust the font size as needed */
+    margin-bottom: 25px;
+}
+.description-4 {
+    color: white;
+   /* Text color */
+    font-size: 25px;
+   /* Adjust the font size as needed */
+}
+.card-conatiner {
+    display: flex;
+    justify-content: space-between;
+}
+.card-container h2 {
+    font-size: 40px;
+}
+.card-container h3 {
+    font-size: 30px;
+}
+.card-container p {
+    padding: 10px;
+    margin: 10px;
+    font-size: 28px;
+}
+.card {
+    margin: 2%;
+    float: left;
+    flex: 0 1 calc(33.33% - 20px);
+    background-color: lightgrey;
+    width: 540px;
+    text-align: center;
+    border-radius: 115px;
+    line-height: 1.8;
+    margin-top: 100px;
+    box-sizing: border-box;
+}
+#ch1, #ch2, #ch3 {
+    display: none;
+}
+#ch1:checked ~ .content, #ch2:checked ~ .content, #ch3:checked ~ .content {
+    display: block;
+}
+#ch1:checked ~ label, #ch2:checked ~ label, #ch3:checked ~ label {
+    display: none;
+}
+.content {
+    display: none;
+}
+label {
+    display: inline-block;
+    cursor: pointer;
+    color: grey;
+    padding: 3px 13px;
+    border-radius: 3px;
+    margin-top: 12px;
+    font-size: 20px;
+   /* Set the font size for the "Show Less" button to 20px */
+    transition: background-color 0.3s, color 0.3s;
+   /* Add transition effects */
+}
+label:hover {
+    color: white;
+   /* Change text color on hover */
+}
+.textbox-img {
+    display: block;
+    width: 100%;
+   /* Make the image responsive */
+}
+
+}
+
+
 /*  */
 
 
@@ -993,5 +1905,5 @@ justify-content:flex-end;
                 background: url(../assets/desktop_images/team_rull_imgs/k_wireframe2.jpg) no-repeat;
                 background-size: cover;
     }
-/*  */
+
 }

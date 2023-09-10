@@ -61,6 +61,7 @@ img, embed, object, video, picture {
   }
   
   /* A keyword indicating that the property contributes nothing to the grid item's placement, indicating auto-placement, an automatic span, or a default span of 1. */
+  
   .col-auto {grid-column: auto;}
   .col-span-1	{grid-column: span 1 / span 1;}
   .col-span-2	{grid-column: span 2 / span 2;}
