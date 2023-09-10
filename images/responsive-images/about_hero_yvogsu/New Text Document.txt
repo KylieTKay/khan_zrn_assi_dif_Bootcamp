@@ -1,0 +1,7 @@
+<img
+sizes="(max-width: 1400px) 100vw, 1400px"
+srcset="
+about_hero_yvogsu_c_scale,w_200.jpg 200w,
+about_hero_yvogsu_c_scale,w_1400.jpg 1400w"
+src="about_hero_yvogsu_c_scale,w_1400.jpg"
+alt="">
