@@ -1,17 +1,20 @@
-aboutus.html
+<!-- aboutus.html -->
 
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@300;400;500;600;700;800;900&family=Prompt:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@300;400;500;600;700;800;900&family=Prompt:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet">
-    <!-- <link href="css/aboutus.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <script src="https://kit.fontawesome.com/fe8842756b.js" crossorigin="anonymous"></script>
@@ -19,25 +22,25 @@ aboutus.html
 </head>
 
 <body>
-        <header>
-            <div id="main-header">  
-        <button id="hamburger">
-            <i class="fa-solid fa-bars"></i>
-        </button>
-        <nav class="mainNav grid" id="burger-con">
-            <menu id="burger-menu" class="col-span-full">
-                <a href="index.html">HOME</a>
-                <a href="eventinfo.html">EVENT INFO</a>
-            </menu>
-        </nav>
-        <div id="logoCon" class="grid">
-            <a class="l-col-start-1 l-col-end-8 m-col-span-full" href=""><img src="images/logoWhite.svg" alt=""></a>
-        </div>
-        <div id="logoMobile">
-                <a  href=""><img src="images/logoMobile.svg" alt=""></a>
-        </div>
-    
+    <header>
+        <div id="main-header">
+            <button id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav class="mainNav grid" id="burger-con">
+                <menu id="burger-menu" class="col-span-full">
+                    <a href="index.html">HOME</a>
+                    <a href="eventinfo.html">EVENT INFO</a>
+                </menu>
+            </nav>
+            <div id="logoCon" class="grid">
+                <a class="l-col-start-1 l-col-end-8 m-col-span-full" href=""><img src="images/logoWhite.svg" alt=""></a>
             </div>
+            <div id="logoMobile">
+                <a href=""><img src="images/logoMobile.svg" alt=""></a>
+            </div>
+
+        </div>
     </header>
     <main>
         <section id="aboutUsHero">
@@ -45,7 +48,8 @@ aboutus.html
             <div id="About_Us" class="drkMode">
                 <h1>ABOUT US</h1>
                 <p class="body">
-                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</span>
                 </p>
             </div>
         </section>
@@ -53,71 +57,78 @@ aboutus.html
         <section id="meetOurTeamCon">
             <h2 class="hidden">Meet Team</h2>
             <div id="meetTeamText" class="drkMode">
-				<h2>
-					MEET OUR TEAM
-				</h2>				
+                <h2>
+                    MEET OUR TEAM
+                </h2>
                 <p class="body">
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
-				</p>
-			</div>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                    et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                    et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                    amet.<br />Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
+                </p>
+            </div>
             <ul id="teamCardCon">
                 <!-- TAYLOR -->
                 <li>
-                    <a class="teamCard" href="*">
-                        <div id="taylorImg" class="teamImg">	
+                    <a data-member="taylor" class="teamCard" id="taylorBtn2" href="#lightbox">
+                        <div id="taylorImg" class="teamImg">
                             <div class="overlay">
                             </div>
                         </div>
                         <h3 id="taylorKhan" class="drkMode">
-						Taylor<br>Khan
+                            Taylor<br>Khan
                         </h3>
                         <ul class="meetTeamSocials">
-                        <i class="fa-brands fa-behance"></i>
-                        <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-behance"></i>
+                            <i class="fa-brands fa-instagram"></i>
                         </ul>
-				</a></li>
+                    </a>
+                </li>
                 <!-- MOH -->
-                <li><a class="teamCard" href="*">
-					<div id="mohImg" class="teamImg">							
-						<div class="overlay overlayGrey">
-						</div>
-					</div>
-					<h3 id="mohZrn" class="drkMode">
-						Moh<br>Zrn
-					</h3>
-					<ul class="meetTeamSocials drkMode">
-                        <i class="fa-brands fa-behance"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                    </ul>
-				</a></li>
+                <li><a data-member="moh" class="teamCard" id="mohBtn2">
+                        <div id="mohImg" class="teamImg">
+                            <div class="overlay overlayGrey">
+                            </div>
+                        </div>
+                        <h3 id="mohZrn" class="drkMode">
+                            Moh<br>Zrn
+                        </h3>
+                        <ul class="meetTeamSocials drkMode">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </ul>
+                    </a></li>
                 <!-- JASON -->
-                <li><a class="teamCard" href="*">
-					<div id="jasonImg" class="teamImg">							
-						<div class="overlay overlayGrey">
-						</div>
-					</div>
-					<h3 id="jasonDif" class="drkMode">
-						Jason<br>Dif
-					</h3>
-					<ul class="meetTeamSocials drkMode">
-                        <i class="fa-brands fa-behance"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                    </ul>
-				</a></li>
+                <li><a data-member="jason" class="teamCard" id="jasonBtn2">
+                        <div id="jasonImg" class="teamImg">
+                            <div class="overlay overlayGrey">
+                            </div>
+                        </div>
+                        <h3 id="jasonDif" class="drkMode">
+                            Jason<br>Dif
+                        </h3>
+                        <ul class="meetTeamSocials drkMode">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </ul>
+                    </a></li>
                 <!-- MIRDAN -->
-                <li><a class="teamCard" href="*">
-					<div id="mirdanImg" class="teamImg">							
-						<div class="overlay overlayGrey">
-						</div>
-					</div>
-					<h3 id="mirdanAssi" class="drkMode">
-						Mirdan<br>Assi
-					</h3>
-					<ul class="meetTeamSocials drkMode">
-                        <i class="fa-brands fa-behance"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                    </ul>
-				</a></li>
+                <li><a data-member="mirdan" class="teamCard" id="mirdanBtn2">
+                        <div id="mirdanImg" class="teamImg">
+                            <div class="overlay overlayGrey">
+                            </div>
+                        </div>
+                        <h3 id="mirdanAssi" class="drkMode">
+                            Mirdan<br>Assi
+                        </h3>
+                        <ul class="meetTeamSocials drkMode">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </ul>
+                    </a></li>
             </ul>
         </section>
 
@@ -125,97 +136,150 @@ aboutus.html
             <h2 class="hidden">The Team</h2>
 
             <!-- TAYLOR -->
-            <div class="teamCard">
+            <div class="teamCard" id="TaylorKhanCard">
                 <img src="assets/desktop_images/team_images/taylor_khan.jpg" alt="" class="teamImg">
                 <div class="teamCardText drkMode">
                     <h51>TAYLOR KHAN</h51>
                     <h3>GROUP ROLE</h3>
                     <ul class="meetTeamSocials">
+                        <i class="fa-brands fa-behance"></i>
                         <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-solid fa-link"></i>
                     </ul>
-                    <button id="taylorBtn" class="viewTeamBtn">VIEW</button>
+                    <button data-member="taylor" id="taylorBtn" class="viewTeamBtn">
+                        <p class="body" id="taylorButtonText">VIEW</p>
+                    </button>
                 </div>
-                    
+                <div id="taylorPortPics" class="portPics hidden">
+                    <img src="assets/desktop_images/team_rull_imgs/k_wireframe1.jpg" alt="">
+                    <img src="assets/desktop_images/team_rull_imgs/k_wireframe2.jpg" alt="">
+                </div>
+                <p class="body pdrkMode teamPara" id="taylorParagraph"></p>
+
             </div>
 
 
-        <!-- MOH -->
-            <div class="teamCard2">
+            <!-- MOH -->
+            <div class="teamCard2" id="MohZrnCard">
                 <div class="teamCardText drkMode">
                     <h52>MOH ZRN</h52>
                     <h3>GROUP ROLE</h3>
                     <ul class="meetTeamSocials2">
+                        <i class="fa-brands fa-linkedin"></i>
                         <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-solid fa-link"></i>
                     </ul>
-                    <button id="mohBtn" class="viewTeamBtn">VIEW</button>
+                    <button data-member="moh" id="mohBtn" class="viewTeamBtn">
+                        <p class="body" id="mohButtonText">VIEW</p>
+                    </button>
                 </div>
                 <img src="assets/desktop_images/team_images/mo.jpg" alt="" class="teamImg">
+                <div id="mohPortPics" class="portPics hidden">
+                    <img src="assets/desktop_images/team_rull_imgs/k_wireframe1.jpg" alt="">
+                    <img src="assets/desktop_images/team_rull_imgs/k_wireframe2.jpg" alt="">
+                </div>
+                <p class="body pdrkMode teamPara" id="mohParagraph"></p>
             </div>
 
 
             <!-- JASON -->
-            <div class="teamCard">
-                <img src="assets/desktop_images/team_images/jason_diff.jpg" alt="" class="teamImg">  
+            <div class="teamCard" id="JasonDifCard">
+                <img src="assets/desktop_images/team_images/jason_diff.jpg" alt="" class="teamImg">
                 <div class="teamCardText drkMode">
                     <h53>JASON DIF</h53>
                     <h3>GROUP ROLE</h3>
                     <ul class="meetTeamSocials">
+                        <i class="fa-brands fa-linkedin"></i>
                         <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-solid fa-link"></i>
                     </ul>
-                    <button id="jasonBtn" class="viewTeamBtn">VIEW</button>
-                </div>           
+                    <button data-member="jason" id="jasonBtn" class="viewTeamBtn">
+                        <p class="body" id="jasonButtonText">VIEW</p>
+                    </button>
+                </div>
+                <div id="jasonPortPics" class="portPics hidden">
+                    <img src="assets/desktop_images/team_rull_imgs/k_wireframe1.jpg" alt="">
+                    <img src="assets/desktop_images/team_rull_imgs/k_wireframe2.jpg" alt="">
+                </div>
+                <p class="body pdrkMode teamPara" id="jasonParagraph"></p>
             </div>
 
 
             <!-- MIRDAN -->
-            <div class="teamCard2">
+            <div class="teamCard2" id="MirdanAssiCard">
                 <div class="teamCardText drkMode">
                     <h54>MIRDAN ASSI</h54>
                     <h3>GROUP ROLE</h3>
                     <ul class="meetTeamSocials2">
+                        <i class="fa-brands fa-facebook"></i>
                         <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-solid fa-link"></i>
                     </ul>
-                    <button id="mirdanBtn" class="viewTeamBtn">VIEW</button>
+                    <button data-member="mirdan" id="mirdanBtn" class="viewTeamBtn">
+                        <p class="body" id="mirdanButtonText">VIEW</p>
+                    </button>
                 </div>
                 <img src="assets/desktop_images/team_images/Mirdan.jpg" alt="" class="teamImg">
+                <div id="mirdanPortPics" class="portPics hidden">
+                    <img src="assets/desktop_images/team_rull_imgs/k_wireframe1.jpg" alt="">
+                    <img src="assets/desktop_images/team_rull_imgs/k_wireframe2.jpg" alt="">
+                </div>
+                <p class="body pdrkMode teamPara" id="mirdanParagraph"></p>
             </div>
-
-            </section>
+        </section>
     </main>
-    <footer>
-
+    <footer class="footer" id="darkFooter">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/logoBlack.svg">
+            </div>
+            <div class="footer-socialmedia">
+                <div class="socials-text">Socials</div>
+                <a href=""><i class="fa-brands fa-facebook"></i></a><a href=""><i
+                        class="fa-brands fa-instagram"></i></a><a href=""><i class="fa-brands fa-behance"></i></a><a
+                    href=""><i class="fa-brands fa-youtube"></i></a><a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="footer-nav"> <a href="#">Contact Us</a>
+                <p>137 Dundas St.
+                    Fanshawe LDA Building
+                    London, ON N6A 1E9
+                </p>
+                <a href="#">Email</a>
+                <p>
+                    mediainquiries@fanshaweonline.ca
+                </p>
+                <a href="#">Tel No.</a>
+                <p>
+                    (226) 666 999
+                </p>
+            </div>
+            <div>
+                <p class="copyright">2023 Fanshawe College © All Rights Reserved</p>
+            </div>
     </footer>
-<div class="lightBox">
-        <h2 class="hidden">Taylor's Team Card</h2>
+    <div id="lightBox" class="hidden">
+        <h2 class="hidden">Pop up Team Card</h2>
         <div class="infoBlock">
-			<img id="taylorKhanImg" class="profileImg" src="assets/desktop_images/team_images/taylor_khan.jpg" alt="Taylor Khan">
-			<p class="body"> 
-                In this project, I designed high-fidelity wireframes, selected colors, text, and layout styles, and contributed to photo choices and coding. My role encompassed both design and development, creating a cohesive and visually appealing website.
+            <img id="teamProfileImg" src="assets/desktop_images/team_images/taylor_khan.jpg" alt="">
+            <p class="body pdrkMode" id="teamPara">
             </p>
-		</div>
+        </div>
         <div class="profileDetails drkMode">
-            <h5>STUDENT NAME</h5>
-            <h2>GROUP ROLE</h2>
+            <h5 id="studentNameTag"></h5>
+            <h2 id="groupRole"></h2>
             <ul class="meetTeamSocials">
                 <i class="fa-brands fa-instagram"></i>
                 <i class="fa-brands fa-instagram"></i>
                 <i class="fa-brands fa-instagram"></i>
             </ul>
             <div class="portfolioPreview">
-                <div class="previewMask" id="previewMask"></div>
-                <div class="previewMask" id="previewMask2"></div>
+                <img src="assets/desktop_images/team_rull_imgs/k_wireframe1.jpg" alt="">
+                <img src="assets/desktop_images/team_rull_imgs/k_wireframe2.jpg" alt="">
             </div>
         </div>
 
-</div>
-<script src="js/main.js"></script>
+    </div>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
