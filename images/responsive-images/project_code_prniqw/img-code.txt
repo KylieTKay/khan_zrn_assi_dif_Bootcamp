@@ -1,0 +1,8 @@
+<img
+sizes="(max-width: 640px) 100vw, 640px"
+srcset="
+project_code_prniqw_c_scale,w_200.jpg 200w,
+project_code_prniqw_c_scale,w_484.jpg 484w,
+project_code_prniqw_c_scale,w_640.jpg 640w"
+src="project_code_prniqw_c_scale,w_640.jpg"
+alt="">
