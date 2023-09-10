@@ -131,130 +131,113 @@ body { margin: 0; }
 @media screen and (max-width: 768px) { 
     /* HEADER */
     
-        #hamburger {
-            display: block;
-            transition: all .5s ease;
-            border: none;
-            background: none;
-            font-size: 40px;
-            height: fit-content;
-            width: fit-content;
-            margin: auto 0;
-        }
-    
-    
-        #hamburger.expanded {
-            transform: rotate(90deg);
-        }
-    
-        #burger-con {
-            display: none;
-        }
-    
-        #burger-con.slide-toggle {
-            display: grid;
-        }
-    
-        #main-header {
-            background-color: #4d0000;
-    
-            max-height: fit-content;
-            height: 100px;
-            max-width: 768px;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            /* align-items: center; */
-            padding: 20px 30px;
-        }
-    
-        #main-header>button {
-            grid-column: 1;
-        }
-    
-        #main-header>button:hover {
-            scale: 1.1;
-        }
-    
-    
-        .mainNav {
-            grid-column: 1;
-            background: none;
-            height: 80px;
-            max-width: 768px;
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
-            padding: unset;
-        }
-    
-        .mainNav>menu {
-            background: #4d0000;
-            width: fit-content;
-            display: inline-flex;
-            flex-direction: column;
-            margin: 20px 0;
-            list-style: none;
-        }
-    
-        .mainNav>menu>a:first-child {
-            border-top: unset;
-            margin-left: 40px;
-        }
-    
-        .mainNav>menu>a:last-child {
-            margin-right: 40px;
-            border-right: none;
-        }
-    
-        .mainNav>menu>a {
-            margin-left: 40px;
-            margin-right: 40px;
-            margin-bottom: 30px;
-            padding-top: 30px;
-            padding-right: unset;
-            border-top: 4px solid white;
-            border-right: unset;
-            font-size: 20px;
-            align-self: center;
-            transition: .3s ease-in-out;
-        }
-    
-        .mainNav>menu>a:hover {
-            color: #4d0000;
-            scale: 1.1;
-        }
-    
-    
-        #main-header>div {
-            background: none;
-            height: unset;
-        }
-    
-        #main-header>div>a {
-            margin: 0;
-        }
-    
-        #logoCon {
-            display: none;
-        }
-    
-        #logoMobile {
-            display: flex;
-            grid-row: 1;
-            grid-column: 2;
-            justify-content: center;
-        }
+         
+    #hamburger {
+        display: block;
+        transition: all .5s ease;
+        border: none;  
+        background: none;
+        font-size: 40px;
+        height: fit-content;
+        width: fit-content;
+        margin: auto 0;
+    }
 
 
-
+     #hamburger.expanded {
+        transform: rotate(90deg);
+     }
+     
+     #burger-con {
+        display: none;
+     }
+     
+     #burger-con.slide-toggle {
+        display: grid;
+    }
     
-    /* INDEX */
+#main-header {
+    background-color: #4d0000;
+
+    max-height: fit-content;
+    height: 100px;
+    max-width: 768px;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    /* align-items: center; */
+    padding: 20px 30px;
+}
+
+#main-header>button{ grid-column: 1;}
+#main-header>button:hover {
+    scale: 1.1;}
 
 
+.mainNav {
+    grid-column: 1;
+    background: none;
+    height: 80px;
+    max-width: 768px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: unset;
+}
+
+.mainNav>menu {
+    background: #4d0000;
+    width: fit-content;
+display: inline-flex;
+flex-direction: column;
+margin: 20px 0;
+list-style: none;
+}
+
+.mainNav>menu>a:first-child{
+    border-top: unset;
+    margin-left: 40px;
+}
+.mainNav>menu>a:last-child{
+    margin-right: 40px;
+    border-right: none;
+}
+.mainNav>menu>a {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-right: unset;
+    border-top: 4px solid white;
+    border-right: unset;
+    font-size: 20px;
+    align-self: center;
+    transition: .3s ease-in-out;
+}
+.mainNav>menu>a:hover {
+    color: #4d0000;
+    scale: 1.1;
+}
 
 
+#main-header>div {
+    background: none;
+    height: unset;
+}
 
-    /* EVENTINFO */
+#main-header>div>a { margin: 0;}
+
+#logoCon {
+display: none;
+}
+#logoMobile{
+    display: flex;
+    grid-row: 1;
+    grid-column: 2;
+    justify-content: center;
+}
+/* #logoMobile img{  align-self: center; justify-self: center;} */
+
+
 
     #eventInfoHero{
         max-width: 768px;
@@ -268,11 +251,22 @@ body { margin: 0; }
         align-items: end;
         
     }
-    #videoPlaceHolder{
-        max-width: 768px;
-        min-width: 100vw;
-        height: 56vw;
-        background: #A19595;
+
+    .video-container {
+        position: relative;
+        overflow: hidden;
+        max-width: 100vw;
+        max-height: 768px;
+        width: 100%;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio (height / width) */
+    }
+    
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
 
     #eventinfoCon{
@@ -286,10 +280,7 @@ body { margin: 0; }
     #eventinfoCon div {margin-top: 80px; align-items: left;}
     #eventinfoCon div h2 {margin-bottom: 40px; text-align: center; font-size: 65px;}
     #eventinfoCon div h3 {margin-bottom: 40px; text-align: center;}
-    #eventinfoCon div p.body {margin-bottom: 40px; text-align: center;}
-
-
-
+    #eventinfoCon div p.body {margin-bottom: 40px; text
 
 
 /* ABOUTUS */
@@ -531,8 +522,8 @@ font-size: 40px;
 
 
 
-    /* EVENTINFO */
-
+    
+        
     #eventInfoHero{
         max-width: 1200px;
         height: 1100px;
@@ -545,11 +536,22 @@ font-size: 40px;
         align-items: end;
         
     }
-    #videoPlaceHolder{
-        max-width: 1200px;
-        min-width: 100vw;
-        height: 56vw;
-        background: #A19595;
+
+    .video-container {
+        position: relative;
+        overflow: hidden;
+        max-width: 100vw;
+        max-height: 1200px;
+        width: 100%;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio (height / width) */
+    }
+    
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
 
     #eventinfoCon{
@@ -567,10 +569,6 @@ font-size: 40px;
 
 
 
-
-
-
-    /* ABOUTUS */
 
     h3 { 
         font-family:'Poppins';
@@ -625,6 +623,7 @@ font-size: 40px;
     margin-bottom: 0;
     /* width: 1050px; */
 }
+
 
 #teamCardCon {
 display: none;
@@ -703,14 +702,12 @@ justify-content:flex-end;
     border: none;
     color: #A19595;
 }
-}
-
 
 
 
 /* FOOTER */
 
-#lightFooter {
+/* #lightFooter { */
 .footer-container {
     background-color:white;
     width: 1024px;
@@ -790,10 +787,11 @@ justify-content:flex-end;
 --bg: rgba(0, 0, 0);
 --con: rgba(77, 0, 0);
 }
+
 /* color scheme / pallete */
 /*  */
 }
-}
+
 
 /* DESK */
 @media screen and (min-width: 1200px) { 
@@ -808,39 +806,46 @@ justify-content:flex-end;
 
 
 
-/* EVENT INFO */
+  
+#eventInfoHero{
+    max-width: 1920px;
+    height: 1510px;
+    background: url(../images/eventInfoHero_D.svg) no-repeat;
+    background-size: contain;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    
+}
+.video-container {
+    /* position: relative; */
+    overflow: hidden;
+    max-width: 100vw;
+    max-height: 1500px;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (height / width) */
+}
 
-    #eventInfoHero{
-        max-width: 1920px;
-        height: 1510px;
-        background: url(../images/eventInfoHero_D.svg) no-repeat;
-        background-size: contain;
-        padding-bottom: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: end;
-        
-    }
-    #videoPlaceHolder{
-        max-width: 1370px;
-        min-width: 1200px;
-        height: 770px;
-        background: #A19595;
-    }
-
-    #eventinfoCon{
-        max-width: 1920px;
-        height: fit-content;
-        background: linear-gradient(45deg, white 20%, rgba(255, 255, 255, 0.885), transparent), url(../assets/desktop_images/industry_event_info.jpg) no-repeat;
-        background-size: cover;
-        padding-top: 0;
-        padding-bottom: 80px;
-    }
-    #eventinfoCon div {margin-top: 80px;}
-    #eventinfoCon div h2 {margin-bottom: 30px; text-align: left; font-size: 60px;}
-    #eventinfoCon div h3 {margin-bottom: 30px; text-align: left;}
-    #eventinfoCon div p.body {margin-bottom: 30px; text-align: left;}
-/*  */
+.video-container iframe {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#eventinfoCon{
+    max-width: 1920px;
+    height: fit-content;
+    background: linear-gradient(45deg, white 20%, rgba(255, 255, 255, 0.885), transparent), url(../assets/desktop_images/industry_event_info.jpg) no-repeat;
+    background-size: cover;
+    padding-top: 0;
+    padding-bottom: 80px;
+}
+#eventinfoCon div {margin-top: 80px;}
+#eventinfoCon div h2 {margin-bottom: 30px; text-align: left; font-size: 60px;}
+#eventinfoCon div h3 {margin-bottom: 30px; text-align: left;}
+#eventinfoCon div p.body {margin-bottom: 30px; text-align: left;}
 
 
 
@@ -848,225 +853,229 @@ justify-content:flex-end;
 
 /* ABOUTUS */
 
-    #aboutUsHero {
-        max-width: 1920px;
-        height: 900px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background:  url(../assets/desktop_images/about_hero.jpg) no-repeat;
-        background-size: cover;
-    }
-    
-    #About_Us {
-        width: 790px;
-        text-align: center;
-        height: fit-content;
-        padding:  40px;
-    }
-    #About_Us h1 {
-        margin-bottom: 45px;
-    }
-    #About_Us p span {
-        color: white;
-    }
-    
-    /* MEET THE TEAM */
-    
-    #meetOurTeamCon {
-        max-width: 1920px;
-        height: fit-content;
-        background: #4D0000;
-        padding: 135px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    
-    #meetTeamText {
-        align-self: center;
-        text-align: center;
-        margin-bottom: 70px;
-        width: 1050px;
-    }
-    
-    #teamCardCon {
-        max-width: max-content;
-        min-width: min-content;
-        height: fit-content;
-        display: inline-flex;
-        flex-direction: row;
-        align-items: unset;
-        justify-content: space-between;
-        align-self: center;
-    }
-    
-    .teamCard {
-        display: grid;   
-        width: 390px; 
-        max-width: unset;
-        grid-template-rows: (3);
-        grid-template-columns: repeat(3,1fr);
-        row-gap: 30px;
-        height: fit-content;
-        padding: unset;
-        justify-content: space-between;
 
-    }
-    
-    .teamCard:hover .teamImg {
-        transform: scale(1.1);
-    }
-    .teamCard:hover .overlay {
-        opacity: 0;
-    }
-    .teamImg {
-        width: 390px;
-        max-width: unset;
-        max-height: unset;
-        height: 390px;
-        grid-column: 1/4;
-        grid-row: 1;
-        border-radius:  100%;
-        transition: 0.5s ease-in-out;
-    }
-    
-    .meetTeamSocials {
-        width: 110px;
-        justify-content: space-between;
-        justify-self: center;
-        display: flex;
-        flex-direction: row;
-        list-style: none;
-        grid-column: 2;
-        grid-row: 3;
-        color: white;
-    }
-    
-    .meetTeamSocials i {
-    font-size: 40px;
-    
-    }
-    
-    .teamCard h3 {
-        grid-column: 2;
-        grid-row: 2;
-    }
-    
-    #taylorImg {
-        background: url(../assets/desktop_images/team_images/taylor_khan.jpg) no-repeat ;
-    }
-    
-    #taylorKhan {
-        line-height: 64px;
-        text-align: center;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 45px;
-    }
-    
-    #mohImg {
-        background: url(../assets/desktop_images/team_images/mo.jpg) no-repeat ;
-    }
-    #mohZrn {
-        line-height: 64px;
-        text-align: center;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 45px;
-    }
-    #jasonImg {
-        background: url(../assets/desktop_images/team_images/jason_diff.jpg) no-repeat ;
-    }
-    #jasonDif {
-        line-height: 64px;
-        text-align: center;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 45px;
-    }
-    #mirdanImg {
-        background: url(../assets/desktop_images/team_images/Mirdan.jpg) no-repeat ;
-    }
-    #mirdanAssi {
-        line-height: 64px;
-        text-align: center;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 45px;
-    }
-    .overlay {
-        mix-blend-mode: saturation;
-        width: 390px;
-        height: 390px;
-        background:  #0000009e;
-        border-radius:  100%;
-        transition: 0.5s ease-in-out;
-    }
-    
-    /* LIGHTBOX */
+.visibleTablet { display: none;}
 
-    .lightBox {
-        position:absolute;
-        background: #4D0000;
-        max-width: 1660px;
-        height: 932px;
-        display: none; 
-        /* js: when a card is selected the light box display is flex */
-        flex-direction: row; 
-        /* justify-items: flex-start;  */
-        align-items: center; 
-        
-    }
 
-    .infoBlock {
-		width: 457px;
-		height: 932px;
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		background:  white;
-	}
+#aboutUsHero {
+    max-width: 1920px;
+    height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:  url(../assets/desktop_images/about_hero.jpg) no-repeat;
+    background-size: cover;
+}
 
-	.profileImg {
-		width: 457px;
-		height: 466px;
-	}
+#About_Us {
+    width: 790px;
+    text-align: center;
+    height: fit-content;
+    padding:  40px;
+}
+#About_Us h1 {
+    margin-bottom: 45px;
+}
+#About_Us p span {
+    color: white;
+}
 
-    .infoBlock p {
-        text-align: center;
-        margin: 20px;
-    }
+/* MEET THE TEAM */
 
-    .profileDetails {
-        margin: 60px 40px 80px 40px;
-        height: 800px;
-		display: flex;
-		flex-direction: column;
-		align-items: normal;
-		justify-content: space-between;
-		flex-wrap: wrap;
-    }
-    .portfolioPreview {
-        width: 1125px;
-        min-width: 800px;
-		height: fit-content;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-    }
-    .previewMask {
-        width: 540px;
-        min-width: 300px;
-		height: 455px;
-    }
-    #previewMask {
-                background: url(../assets/desktop_images/team_rull_imgs/k_wireframe1.jpg) no-repeat;
-                background-size: cover;
-    }
-    #previewMask2 {
-                background: url(../assets/desktop_images/team_rull_imgs/k_wireframe2.jpg) no-repeat;
-                background-size: cover;
-    }
+#meetOurTeamCon {
+    max-width: 1920px;
+    height: fit-content;
+    background: #4D0000;
+    padding: 135px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
+#meetTeamText {
+    align-self: center;
+    text-align: center;
+    margin-bottom: 70px;
+    width: 1050px;
+}
+
+
+#teamCardCon {
+    width: 1650px;
+    height: fit-content;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: unset;
+    justify-content: space-between;
+    align-self: center;
+}
+
+
+.teamCard {
+    display: grid;   
+    width: 390px; 
+    max-width: unset;
+    grid-template-rows: (3);
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 30px;
+    height: fit-content;
+    padding: unset;
+    justify-content: space-between;
+
+}
+
+.teamCard:hover .teamImg {
+    transform: scale(1.1);
+}
+.teamCard:hover .overlay {
+    opacity: 0;
+}
+.teamImg {
+    width: 390px;
+    max-width: unset;
+    max-height: unset;
+    height: 390px;
+    grid-column: 1/4;
+    grid-row: 1;
+    border-radius:  100%;
+    transition: 0.5s ease-in-out;
+}
+
+.meetTeamSocials {
+    width: 110px;
+    justify-content: space-between;
+    justify-self: center;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    grid-column: 2;
+    grid-row: 3;
+    color: white;
+}
+
+.meetTeamSocials i {
+font-size: 40px;
+
+}
+
+.teamCard h3 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#taylorImg {
+    background: url(../assets/desktop_images/team_images/taylor_khan.jpg) no-repeat ;
+}
+
+#taylorKhan {
+    line-height: 64px;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+#mohImg {
+    background: url(../assets/desktop_images/team_images/mo.jpg) no-repeat ;
+}
+#mohZrn {
+    line-height: 64px;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+}
+#jasonImg {
+    background: url(../assets/desktop_images/team_images/jason_diff.jpg) no-repeat ;
+}
+#jasonDif {
+    line-height: 64px;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+}
+#mirdanImg {
+    background: url(../assets/desktop_images/team_images/Mirdan.jpg) no-repeat ;
+}
+#mirdanAssi {
+    line-height: 64px;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+}
+.overlay {
+    mix-blend-mode: saturation;
+    width: 390px;
+    height: 390px;
+    background:  #0000009e;
+    border-radius:  100%;
+    transition: 0.5s ease-in-out;
+}
+
+/* LIGHTBOX */
+
+.lightBox {
+    position:absolute;
+    background: #4D0000;
+    max-width: 1660px;
+    height: 932px;
+    display: none; 
+    /* js: when a card is selected the light box display is flex */
+    flex-direction: row; 
+    /* justify-items: flex-start;  */
+    align-items: center; 
+    
+}
+
+.infoBlock {
+    width: 457px;
+    height: 932px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background:  white;
+}
+
+.profileImg {
+    width: 457px;
+    height: 466px;
+}
+
+.infoBlock p {
+    text-align: center;
+    margin: 20px;
+}
+
+.profileDetails {
+    margin: 60px 40px 80px 40px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.portfolioPreview {
+    width: 1125px;
+    min-width: 800px;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.previewMask {
+    width: 540px;
+    min-width: 300px;
+    height: 455px;
+}
+#previewMask {
+            background: url(../assets/desktop_images/team_rull_imgs/k_wireframe1.jpg) no-repeat;
+            background-size: cover;
+}
+#previewMask2 {
+            background: url(../assets/desktop_images/team_rull_imgs/k_wireframe2.jpg) no-repeat;
+            background-size: cover;
+}
 }
