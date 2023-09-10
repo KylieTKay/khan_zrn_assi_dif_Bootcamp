@@ -11,7 +11,7 @@ aboutus.html
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@300;400;500;600;700;800;900&family=Prompt:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet">
-    <link href="css/aboutus.css" rel="stylesheet">
+    <!-- <link href="css/aboutus.css" rel="stylesheet"> -->
     <link href="css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <script src="https://kit.fontawesome.com/fe8842756b.js" crossorigin="anonymous"></script>
@@ -19,7 +19,26 @@ aboutus.html
 </head>
 
 <body>
-    <header></header>
+        <header>
+            <div id="main-header">  
+        <button id="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav class="mainNav grid" id="burger-con">
+            <menu id="burger-menu" class="col-span-full">
+                <a href="index.html">HOME</a>
+                <a href="eventinfo.html">EVENT INFO</a>
+            </menu>
+        </nav>
+        <div id="logoCon" class="grid">
+            <a class="l-col-start-1 l-col-end-8 m-col-span-full" href=""><img src="images/logoWhite.svg" alt=""></a>
+        </div>
+        <div id="logoMobile">
+                <a  href=""><img src="images/logoMobile.svg" alt=""></a>
+        </div>
+    
+            </div>
+    </header>
     <main>
         <section id="aboutUsHero">
             <h2 class="hidden">About Us</h2>
@@ -174,7 +193,6 @@ aboutus.html
     <footer>
 
     </footer>
-</body>
 <div class="lightBox">
         <h2 class="hidden">Taylor's Team Card</h2>
         <div class="infoBlock">
@@ -198,4 +216,6 @@ aboutus.html
         </div>
 
 </div>
+<script src="js/main.js"></script>
+</body>
 </html>
