@@ -149,17 +149,6 @@ function mirdan() {
     mirdanButton.forEach(button => button.addEventListener("click", mirdan));
 //#
 
-//#lightblue
-let taylorButton2 = document.querySelectorAll("#taylorBtn2");
-let popUp = document.querySelector("#lightBox");
-let profileImg = document.querySelector("#teamProfileImg");
-let teamParagraph = document.querySelector("#teamPara");
-let role = document.querySelector("#groupRole");
-//#
-
-
-
-
 (function(){
 	"use strict";
 	
