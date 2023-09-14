@@ -11,8 +11,8 @@
         href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@300;400;500;600;700;800;900&family=Prompt:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet">
-    <!-- <link href="css/eventinfo.css" rel="stylesheet"> -->
-    <link href="css/main.css" rel="stylesheet">
+    <link href="css/eventinfo.css" rel="stylesheet">
+    <!-- <link href="css/main.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/reset.css">
     <script src="https://kit.fontawesome.com/fe8842756b.js" crossorigin="anonymous"></script>
     <title>Industry Night_Event info</title>
@@ -20,14 +20,14 @@
 
 <body>
     <header>
-        <div id="main-header">
+        <div class="main-header">
             <button id="hamburger">
                 <i class="fa-solid fa-bars"></i>
             </button>
             <nav class="mainNav grid" id="burger-con">
                 <menu id="burger-menu" class="col-span-full">
-                    <a href="index.html">HOME</a>
-                    <a href="aboutUs.html">ABOUT</a>
+                    <a class="menuItem" href="index.html">HOME</a>
+                    <a class="menuItem" href="aboutUs.html">ABOUT</a>
                 </menu>
             </nav>
             <div id="logoCon" class="grid">
@@ -50,7 +50,7 @@
         </section>
         <section id="eventinfoCon" class="grid">
             <h2 class="hidden">TIME & LOCATION</h2>
-            <div class="l-col-start-1 l-col-end-7 m-col-span-full col-span-full">
+            <div class="eventext l-col-start-1 l-col-end-7 m-col-span-full col-span-full">
                 <h2>TIME & LOCATION</h2>
                 <h3>APRIL 2024 12PM - 8PM</h3>
                 <h3>THE GOOD FOUNDATION INC. THEATRE</h3>
@@ -60,7 +60,7 @@
                     <br>London, ON N6A 1E9
                 </p>
             </div>
-            <div class="col-span-full">
+            <div class="eventext col-span-full">
                 <h2>ABOUT THE EVENT</h2>
                 <p class="body">
                     Meet and mingle with faculty and students, tour the facilities, and hear about upcoming projects and
@@ -78,8 +78,52 @@
         </section>
 
     </main>
-    <footer></footer>
-    <script src="js/main.js"></script>
+    <footer id="darkFooter" class="drkMode">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/logoWhite.svg">
+            </div>
+            <div class="footer-socialmedia">
+                <h3>SOCIALS</h3>
+                <menu #footSocial>
+                 <a href="">
+                    <i class="fa-brands fa-facebook"></i>
+                </a><a href="">
+                    <i
+                        class="fa-brands fa-instagram"></i>
+                    </a><a href="">
+                            <i class="fa-brands fa-behance"></i>
+                        </a><a
+                    href=""><i class="fa-brands fa-youtube"></i>
+                </a><a href="">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>    
+                </menu>
+               
+            </div>
+            <div class="footer-nav"> 
+                <h3>CONTACT US</h3>
+                <a href="#"><h4>Address</h4></a>
+                <p class= pDrkMode">137 Dundas St.
+                    Fanshawe LDA Building
+                    London, ON N6A 1E9
+                </p>
+                <a href="#"><h4>Email</h4></a>
+                <p class= pDrkMode">
+                    mediainquiries@fanshaweonline.ca
+                </p>
+                <a href="#"><h4>Tel No.</h4></a>
+                <p class= pDrkMode">
+                    (226) 666 999
+                </p>
+            </div>
+            <div class="copyright">
+                <p>2023 Fanshawe College © All Rights Reserved</p>
+            </div>
+    </footer>
+        <script src="js/main.js"></script>
+
+
 </body>
 
 </html>

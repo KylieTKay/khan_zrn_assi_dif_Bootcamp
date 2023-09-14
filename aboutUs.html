@@ -15,7 +15,8 @@
         rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link href="css/main.css" rel="stylesheet">
+    <!-- <link href="css/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/aboutus.css">
     <link rel="stylesheet" href="css/reset.css">
     <script src="https://kit.fontawesome.com/fe8842756b.js" crossorigin="anonymous"></script>
     <title>Industry Night_About The Team</title>
@@ -23,14 +24,14 @@
 
 <body>
     <header>
-        <div id="main-header">
+        <div class="main-header">
             <button id="hamburger">
                 <i class="fa-solid fa-bars"></i>
             </button>
             <nav class="mainNav grid" id="burger-con">
                 <menu id="burger-menu" class="col-span-full">
-                    <a href="index.html">HOME</a>
-                    <a href="eventinfo.html">EVENT INFO</a>
+                    <a class="menuItem" href="index.html">HOME</a>
+                    <a class="menuItem" href="eventinfo.html">EVENT INFO</a>
                 </menu>
             </nav>
             <div id="logoCon" class="grid">
@@ -53,7 +54,6 @@
                 </p>
             </div>
         </section>
-
         <section id="meetOurTeamCon">
             <h2 class="hidden">Meet Team</h2>
             <div id="meetTeamText" class="drkMode">
@@ -139,7 +139,7 @@
             <div class="teamCard" id="TaylorKhanCard">
                 <img src="assets/desktop_images/team_images/taylor_khan.jpg" alt="" class="teamImg">
                 <div class="teamCardText drkMode">
-                    <h51>TAYLOR KHAN</h51>
+                    <h5>TAYLOR KHAN</h5>
                     <h3>GROUP ROLE</h3>
                     <ul class="meetTeamSocials">
                         <i class="fa-brands fa-behance"></i>
@@ -162,9 +162,9 @@
             <!-- MOH -->
             <div class="teamCard2" id="MohZrnCard">
                 <div class="teamCardText drkMode">
-                    <h52>MOH ZRN</h52>
+                    <h5>MOH ZRN</h5>
                     <h3>GROUP ROLE</h3>
-                    <ul class="meetTeamSocials2">
+                    <ul class="meetTeamSocials">
                         <i class="fa-brands fa-linkedin"></i>
                         <i class="fa-brands fa-instagram"></i>
                         <i class="fa-solid fa-link"></i>
@@ -186,7 +186,7 @@
             <div class="teamCard" id="JasonDifCard">
                 <img src="assets/desktop_images/team_images/jason_diff.jpg" alt="" class="teamImg">
                 <div class="teamCardText drkMode">
-                    <h53>JASON DIF</h53>
+                    <h5>JASON DIF</h5>
                     <h3>GROUP ROLE</h3>
                     <ul class="meetTeamSocials">
                         <i class="fa-brands fa-linkedin"></i>
@@ -208,9 +208,9 @@
             <!-- MIRDAN -->
             <div class="teamCard2" id="MirdanAssiCard">
                 <div class="teamCardText drkMode">
-                    <h54>MIRDAN ASSI</h54>
+                    <h5>MIRDAN ASSI</h5>
                     <h3>GROUP ROLE</h3>
-                    <ul class="meetTeamSocials2">
+                    <ul class="meetTeamSocials">
                         <i class="fa-brands fa-facebook"></i>
                         <i class="fa-brands fa-instagram"></i>
                         <i class="fa-solid fa-link"></i>
@@ -228,55 +228,68 @@
             </div>
         </section>
     </main>
-    <footer class="footer" id="darkFooter">
+    <footer id="darkFooter" class="drkMode">
         <div class="footer-container">
             <div class="footer-logo">
-                <img src="images/logoBlack.svg">
+                <img src="images/logoWhite.svg">
             </div>
             <div class="footer-socialmedia">
-                <div class="socials-text">Socials</div>
-                <a href=""><i class="fa-brands fa-facebook"></i></a><a href=""><i
-                        class="fa-brands fa-instagram"></i></a><a href=""><i class="fa-brands fa-behance"></i></a><a
-                    href=""><i class="fa-brands fa-youtube"></i></a><a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <h3>SOCIALS</h3>
+                <menu #footSocial>
+                 <a href="">
+                    <i class="fa-brands fa-facebook"></i>
+                </a><a href="">
+                    <i
+                        class="fa-brands fa-instagram"></i>
+                    </a><a href="">
+                            <i class="fa-brands fa-behance"></i>
+                        </a><a
+                    href=""><i class="fa-brands fa-youtube"></i>
+                </a><a href="">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>    
+                </menu>
+               
             </div>
-            <div class="footer-nav"> <a href="#">Contact Us</a>
-                <p>137 Dundas St.
+            <div class="footer-nav"> 
+                <h3>CONTACT US</h3>
+                <a href="#"><h4>Address</h4></a>
+                <p class= pDrkMode">137 Dundas St.
                     Fanshawe LDA Building
                     London, ON N6A 1E9
                 </p>
-                <a href="#">Email</a>
-                <p>
+                <a href="#"><h4>Email</h4></a>
+                <p class= pDrkMode">
                     mediainquiries@fanshaweonline.ca
                 </p>
-                <a href="#">Tel No.</a>
-                <p>
+                <a href="#"><h4>Tel No.</h4></a>
+                <p class= pDrkMode">
                     (226) 666 999
                 </p>
             </div>
-            <div>
-                <p class="copyright">2023 Fanshawe College © All Rights Reserved</p>
+            <div class="copyright">
+                <p>2023 Fanshawe College © All Rights Reserved</p>
             </div>
     </footer>
-    <div id="lightBox" class="hidden">
+
+    <div id="lightBox" class="hidden grid">
         <h2 class="hidden">Pop up Team Card</h2>
-        <div class="infoBlock">
-            <img id="teamProfileImg" src="assets/desktop_images/team_images/taylor_khan.jpg" alt="">
+        <button id="closeBtn"><i class="fa-solid fa-circle-xmark"></i></button>
+            <img id="teamProfileImg" src="" alt="">
             <p class="body pdrkMode" id="teamPara">
             </p>
-        </div>
-        <div class="profileDetails drkMode">
+            <div id="profileText" class="drkMode">
             <h5 id="studentNameTag"></h5>
             <h2 id="groupRole"></h2>
             <ul class="meetTeamSocials">
                 <i class="fa-brands fa-instagram"></i>
                 <i class="fa-brands fa-instagram"></i>
                 <i class="fa-brands fa-instagram"></i>
-            </ul>
+            </ul></div>
             <div class="portfolioPreview">
                 <img src="assets/desktop_images/team_rull_imgs/k_wireframe1.jpg" alt="">
                 <img src="assets/desktop_images/team_rull_imgs/k_wireframe2.jpg" alt="">
             </div>
-        </div>
 
     </div>
     <script src="js/main.js"></script>
