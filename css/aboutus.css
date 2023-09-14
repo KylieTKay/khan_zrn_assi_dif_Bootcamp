@@ -359,8 +359,6 @@ i {
         }
 
 
-
-
         #teamCardCon {
             max-width: unset;
             height: fit-content;
@@ -483,8 +481,9 @@ i {
                     font-size: 45px;
                 }
 
-
-
+            }
+        }
+    }
                 /* LIGHTBOX */
 
                 #lightBox {
@@ -497,6 +496,7 @@ i {
                     padding-top: 80px;
                     padding-bottom: 20px;
                     justify-content: center;
+                    overflow-y: scroll;
 
                     #closeBtn {
                         position: absolute;
@@ -573,9 +573,9 @@ i {
                 }
             }
 
-        }
-    }
-}
+        
+    
+
 
 /* TABLET */
 @media screen and (min-width: 768px) {
@@ -985,7 +985,6 @@ i {
     /* LIGHTBOX */
 
     #lightBox {
-        display: none;
         position: fixed;
         top: 50%;
         left: 50%;
