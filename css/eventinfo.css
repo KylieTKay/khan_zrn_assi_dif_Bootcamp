@@ -299,14 +299,25 @@ p.body {
         padding-bottom: 0;
         display: flex;
         justify-content: center;
-        align-items: end;
+        align-items: end;       
+    }
 
-        #videoPlaceHolder {
-            max-width: 768px;
-            min-width: 100vw;
-            height: 56vw;
-            background: #A19595;
-        }
+    .video-container {
+        position: relative;
+        overflow: hidden;
+        max-width: 100vw;
+        max-height: 768px;
+        width: 100%;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio (height / width) */
+    }
+    
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
     }
 
     #eventinfoCon {
@@ -357,12 +368,23 @@ p.body {
         display: flex;
         justify-content: center;
         align-items: end;
-        
-    #videoPlaceHolder{
-        max-width: 1200px;
-        min-width: 100vw;
-        height: 56vw;
-        background: #A19595;
+    }
+
+    .video-container {
+        position: relative;
+        overflow: hidden;
+        max-width: 100vw;
+        max-height: 1200px;
+        width: 100%;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio (height / width) */
+    }
+    
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
  }
     #eventinfoCon{
@@ -393,14 +415,24 @@ p.body {
         display: flex;
         justify-content: center;
         align-items: end;
-        
-    #videoPlaceHolder{
-        max-width: 1370px;
-        min-width: 1200px;
-        height: 770px;
-        background: #A19595;
     }
+    .video-container {
+        /* position: relative; */
+        overflow: hidden;
+        max-width: 100vw;
+        max-height: 1500px;
+        width: 100%;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio (height / width) */
     }
+    
+    .video-container iframe {
+        /* position: absolute; */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
     #eventinfoCon{
         max-width: 1920px;
         height: fit-content;
