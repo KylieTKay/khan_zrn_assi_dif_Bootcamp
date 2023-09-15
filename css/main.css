@@ -845,13 +845,13 @@ label:hover {
                         margin-top: 30px;
 
                         #studentNameTag {
-                            font-size: 8vw;
+                            font-size: 6vw;
                         }
 
                         #groupRole,
                         .meetTeamSocials {
-                            font-size: 4vw;
-                            word-wrap: none;
+                            font-size: 3vw;
+                            word-wrap: break-word;
                             margin-top: 3vw;
                         }
                     }
