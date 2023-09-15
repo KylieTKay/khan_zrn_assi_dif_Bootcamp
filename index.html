@@ -18,8 +18,8 @@
     <title>Industry Night_Event info</title>
 </head>
 
-<body id="indexHTML">
-    <div>
+<body>
+    <div id="index-background">
         <header>
             <div class="main-header">
                 <button id="hamburger">
@@ -45,19 +45,21 @@
         </header>
         <main>
         <div id="hero-img" class="grid">
-            <a class="col-start-0 col-end-4 m-col-start-2 m-col-end-6 l-col-start-1 l-col-end-4" href="">
+            <a class="col-start-2 col-end-4 m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-6" href="">
                 <div class="white-box-button">View Details</div>
             </a>
         </div>
     
-        <section class="program-description title">
+        <section class="program-description grid">
+            <div class="title drkMode col-span-full l-col-span-full">
             <h2>PROGRAM DESCRIPTION</h2>
-            <p>
+            <p class="body">
                 The world of new media is bursting with countless career possibilities that challenge your imagination and offer an impactful and enjoyable entertainment experience to the audience. If you aspire to a career in creating awe-inspiring content, the Interactive Media Design program can equip you with the essential skills to translate your creativity into digital media design, development, and production.
             </p>
-        </section>
+        </div>
+        
     
-        <div class="sectionText drkMode l-col-span-full">
+        <div class="sectionText drkMode col-span-full">
             <menu class="programFeatures">
               <div class="feature drkMode">
                 <div class="icon"><i class="fa-solid fa-network-wired"></i></div>
@@ -93,14 +95,14 @@
               </div>
             </menu>
           </div>      
-    
-        <section class="student-portfolios drkMode">
-            <div class="title">            <h2>STUDENT PORTFOLIOS</h2>
-            <p>
+     </section>
+        <section class="student-portfolios grid drkMode">
+            <div class="title  col-span-full m-col-span-full l-col-span-full">            <h2>STUDENT PORTFOLIOS</h2>
+            <p class="body">
                Interactive Media Design is a field of study that provides students with an expansive understanding of the processes and methods involved in conceiving, creating, and evaluating technology-mediated experiences.
             </p>
             </div>
-            <div class="image-gallery" id="student-portfolios-gallery">
+            <div class="image-gallery  col-span-full m-col-span-full l-col-span-full" id="student-portfolios-gallery">
 
                 <div class="image-row">
                     <div class="image-cell">
@@ -231,16 +233,16 @@
             
         </section>
     
-        <section class="features drkMode">
-            <div class="title">
+        <section class="features drkMode grid">
+            <div class="title col-span-full m-col-span-full l-col-span-full">
             <h2>FEATURES</h2>
             <p class="body">
                 Interactive Media Design is a field of study that provides students with an expansive understanding of the processes and methods involved in conceiving, creating, and evaluating technology-mediated experiences.
             </p>
             </div>
-            <div id="featureGallery" class="image-gallery">
-                <div class="image-row stack-gallery">
-                    ><h3 class="title grey-text">PROFESSOR PICKS</h3>
+            <div id="featureGallery" class="image-gallery col-span-full m-col-span-full l-col-span-full">
+                <h3 class="title grey-text">PROFESSOR PICKS</h3><div class="image-row stack-gallery">
+                    
                     <img src="images/Placement-Area-1.png" alt="Image 1">
                     <img src="images/responsive-images/project_code2_afyawk/project_code2_afyawk_c_scale,w_640.jpg" alt="Image 2">
                     <img src="images/Placement-Area-1.png" alt="Image 3">
@@ -267,7 +269,7 @@
         </section>
     
     <section class="graduates">
-        <div class="title drkMode">
+        <div class="title grid drkMode">
             <h2>SENDING OFF OUR GRADUATES</h2>
             <h3>
                 Completing their finals in our program, our level 4 students.....
@@ -334,33 +336,47 @@
             </div>       
         </section>
         </main>
-        <footer class="footer" id="lightFooter">
+        <footer id="lightFooter">
             <div class="footer-container">
                 <div class="footer-logo">
-                    <img src="images/logoBlack.svg">
+                    <img src="images/logoWhite.svg">
                 </div>
                 <div class="footer-socialmedia">
-                    <div class="socials-text">Socials</div>
-                    <a href=""><i class="fab fa-facebook"></i></a><a href=""><i
-                            class="fab fa-instagram"></i></a><a href=""><i class="fab fa-behance"></i></a><a
-                        href=""><i class="fab fa-youtube"></i></a><a href=""><i class="fab fa-linkedin"></i></a>
+                    <h3>SOCIALS</h3>
+                    <menu #footSocial>
+                     <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a><a href="">
+                        <i
+                            class="fa-brands fa-instagram"></i>
+                        </a><a href="">
+                                <i class="fa-brands fa-behance"></i>
+                            </a><a
+                        href=""><i class="fa-brands fa-youtube"></i>
+                    </a><a href="">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>    
+                    </menu>
+                   
                 </div>
-                <div class="footer-nav"> <a href="#">Contact Us</a>
-                    <p>137 Dundas St.
+                <div class="footer-nav"> 
+                    <h3>CONTACT US</h3>
+                    <a href="#"><h4>Address</h4></a>
+                    <p class= pDrkMode">137 Dundas St.
                         Fanshawe LDA Building
                         London, ON N6A 1E9
                     </p>
-                    <a href="#">Email</a>
-                    <p>
+                    <a href="#"><h4>Email</h4></a>
+                    <p class= pDrkMode">
                         mediainquiries@fanshaweonline.ca
                     </p>
-                    <a href="#">Tel No.</a>
-                    <p>
+                    <a href="#"><h4>Tel No.</h4></a>
+                    <p class= pDrkMode">
                         (226) 666 999
                     </p>
                 </div>
-                <div>
-                    <p class="copyright">2023 Fanshawe College © All Rights Reserved</p>
+                <div class="copyright">
+                    <p>2023 Fanshawe College © All Rights Reserved</p>
                 </div>
         </footer>
     </div>
