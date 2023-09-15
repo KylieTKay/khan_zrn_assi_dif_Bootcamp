@@ -549,7 +549,7 @@ label:hover {
 }
 #testImg1{
     background: url(../images/desktop_images/team_images/jason_diff.jpg); 
-    /* (../assets/desktop_images/team_images/jason_diff.jpg); */
+   
 }
 
 
@@ -1136,7 +1136,7 @@ display: block;
 border-radius: 25% 25% 0 0;
 }
 #testImg1{
-background: url(../assets/desktop_images/team_images/jason_diff.jpg);
+background: url(../images/desktop_images/team_images/jason_diff.jpg);
 }
 
 
@@ -1177,7 +1177,7 @@ background: url(../assets/desktop_images/team_images/jason_diff.jpg);
 #eventinfoCon {
     max-width: 768px;
     height: fit-content;
-    background: linear-gradient(to top, white 40%, rgba(255, 255, 255, 0.885), transparent), url(../assets/desktop_images/industry_event_info.jpg) no-repeat;
+    background: linear-gradient(to top, white 40%, rgba(255, 255, 255, 0.885), transparent), url(../images/desktop_images/industry_event_info.jpg) no-repeat;
     background-size: cover;
     padding-top: 450px;
     padding-bottom: 50px;
@@ -1245,7 +1245,7 @@ background: url(../assets/desktop_images/team_images/jason_diff.jpg);
     #eventinfoCon{
         max-width: 1200px;
         height: fit-content;
-        background: linear-gradient(to top, white 40%, rgba(255, 255, 255, 0.885), transparent), url(../assets/desktop_images/industry_event_info.jpg) no-repeat;
+        background: linear-gradient(to top, white 40%, rgba(255, 255, 255, 0.885), transparent), url(../images/desktop_images/industry_event_info.jpg) no-repeat;
         background-size: cover;
         padding-top: 500px;
         padding-bottom: 80px;
@@ -1624,12 +1624,7 @@ background: url(../assets/desktop_images/team_images/jason_diff.jpg);
     width:40%;
     margin: 10px;
 }
-/* .mask{
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    background: url(/assets/desktop_images/profs-choices/profs-choice2.jpg);
-} */
+
 
 .features .grey-text {
     color: #A19595;
@@ -1714,7 +1709,7 @@ display: block;
 border-radius: 25% 25% 0 0;
 }
 #testImg1{
-background: url(../assets/desktop_images/team_images/jason_diff.jpg);
+background: url(../images/desktop_images/team_images/jason_diff.jpg);
 }
 
 
@@ -1742,7 +1737,7 @@ background: url(../assets/desktop_images/team_images/jason_diff.jpg);
     #eventinfoCon{
         max-width: 1920px;
         height: fit-content;
-        background: linear-gradient(45deg, white 20%, rgba(255, 255, 255, 0.885), transparent), url(../assets/desktop_images/industry_event_info.jpg) no-repeat;
+        background: linear-gradient(45deg, white 20%, rgba(255, 255, 255, 0.885), transparent), url(../images/desktop_images/industry_event_info.jpg) no-repeat;
         background-size: cover;
         padding-top: 0;
         padding-bottom: 80px;
@@ -1885,24 +1880,24 @@ background: url(../assets/desktop_images/team_images/jason_diff.jpg);
                 }
 
                 #taylorImg {
-                    background: url(../assets/desktop_images/team_images/taylor_khan.jpg) no-repeat;
+                    background: url(../images/desktop_images/team_images/taylor_khan.jpg) no-repeat;
                     background-size: cover;
                 }
 
                 #mohImg {
-                    background: url(../assets/desktop_images/team_images/mo.jpg) no-repeat;
+                    background: url(../images/desktop_images/team_images/mo.jpg) no-repeat;
                     background-size: cover;
 
                 }
 
                 #jasonImg {
-                    background: url(../assets/desktop_images/team_images/jason_diff.jpg) no-repeat;
+                    background: url(../images/desktop_images/team_images/jason_diff.jpg) no-repeat;
                     background-size: cover;
 
                 }
 
                 #mirdanImg {
-                    background: url(../assets/desktop_images/team_images/Mirdan.jpg) no-repeat;
+                    background: url(../images/desktop_images/team_images/Mirdan.jpg) no-repeat;
                     background-size: cover;
 
                 }
@@ -1946,7 +1941,7 @@ background: url(../assets/desktop_images/team_images/jason_diff.jpg);
 
                 #lightBox {
                     position: fixed;
-                    top: 10vh;
+                    top: 30px;
                     left: 0;
                     right: 0;
                     background: #4D0000;
@@ -1954,7 +1949,7 @@ background: url(../assets/desktop_images/team_images/jason_diff.jpg);
                     height: 75vh;
                     padding: 80px 0;
                     justify-content: center;
-                    overflow-y: unset;
+                    overflow-y: scroll;
                     box-shadow: 0px 0px 50px rgba(14, 14, 14, 0.758);
                 
 
