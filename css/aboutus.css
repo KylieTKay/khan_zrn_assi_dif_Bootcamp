@@ -2,6 +2,12 @@
     display: none;
 }
 
+body {
+display: block;
+justify-content: center;
+align-items: center;
+}
+
 .drkMode {
     color: white;
 }
@@ -32,9 +38,7 @@ h3 {
     font-weight: bold;
 }
 
-a,
-li,
-i {
+a, li, i {
     color: white;
     text-decoration: none;
     transition: 0.3s ease-in-out;
@@ -53,7 +57,7 @@ p.body {
 .main-header {
     background-color: #b3272d;
     height: fit-content;
-    max-width: 1900px;
+    max-width: 100%;
     display: block;
 
     #hamburger {
@@ -65,7 +69,7 @@ p.body {
         background: black;
         height: 100px;
         /* height: 80px; */
-        max-width: 1920px;
+        max-width: 100%;
         display: flex;
         padding-top: 40px;
     }
@@ -79,7 +83,7 @@ p.body {
 .mainNav {
     background: #b3272d;
     height: 80px;
-    max-width: 1920px;
+    max-width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -148,7 +152,7 @@ p.body {
 }
 
 .footer-container {
-    max-width: 1920px;
+    max-width: 100%;
     height: 525px;
     padding: 40px 84px;
     display: grid;
@@ -231,15 +235,14 @@ i {
             margin: auto 0;
             grid-column: 1;
 
-            .expanded {
-                transform: rotate(90deg);
-            }
 
             :hover {
                 scale: 1.1;
             }
         }
-
+        .expanded {
+            transform: rotate(90deg);
+        }
         #logoCon {
             display: none;
         }
@@ -265,16 +268,19 @@ i {
             flex-direction: row;
             justify-content: flex-end;
             padding: unset;
+            
 
             #burger-menu {
                 background: #4d0000;
                 width: fit-content;
+                height: fit-content;
                 display: inline-flex;
                 flex-direction: column;
                 margin: 20px 0;
                 list-style: none;
+                transition: .3s ease;
 
-                a {
+                .menuItem {
                     margin-left: 40px;
                     margin-right: 40px;
                     margin-bottom: 30px;
@@ -287,17 +293,17 @@ i {
                     transition: .3s ease-in-out;
                 }
 
-                a:first-child {
+                .menuItem:first-child {
                     border-top: unset;
                     margin-left: 40px;
                 }
 
-                a:last-child {
+                .menuItem:last-child {
                     margin-right: 40px;
                     border-right: none;
                 }
 
-                a:hover {
+                .menuItem:hover {
                     color: #4d0000;
                     scale: 1.1;
                 }
@@ -311,12 +317,12 @@ i {
     }
 
     #aboutUsHero {
-        max-width: 585px;
+        max-width: 768px;
         height: 525px;
         display: flex;
         align-items: center;
         justify-content: center;
-        background: url(../assets/desktop_images/about_hero.jpg) no-repeat;
+        background: url(../images/responsive-images/about_hero_yvogsu/about_hero_yvogsu_c_scale\,w_1400.jpg) no-repeat;
         background-size: cover;
 
         #About_Us {
@@ -573,10 +579,6 @@ i {
                 }
             }
 
-        
-    
-
-
 /* TABLET */
 @media screen and (min-width: 768px) {
 
@@ -607,7 +609,7 @@ i {
         display: flex;
         align-items: center;
         justify-content: center;
-        background: url(../assets/desktop_images/about_hero.jpg) no-repeat;
+        background: url(../images/responsive-images/about_hero_yvogsu/about_hero_yvogsu_c_scale\,w_1400.jpg) no-repeat;
         background-size: cover;
 
         #About_Us {
@@ -804,12 +806,12 @@ i {
 
 
     #aboutUsHero {
-        max-width: 1920px;
+        max-width: 100%;
         height: 900px;
         display: flex;
         align-items: center;
         justify-content: center;
-        background: url(../assets/desktop_images/about_hero.jpg) no-repeat;
+        background: url(../images/responsive-images/about_hero_yvogsu/about_hero_yvogsu_c_scale\,w_1400.jpg) no-repeat;
         background-size: cover;
     }
 
@@ -831,7 +833,7 @@ i {
     /* MEET THE TEAM */
 
     #meetOurTeamCon {
-        max-width: 1920px;
+        max-width: 100%;
         height: fit-content;
         background: #4D0000;
         padding: 135px;
