@@ -50,7 +50,7 @@ let mirdaninfo = document.querySelector('#mirdanParagraph');
 let team = {
 	//#blue
 	taylor: {
-		profileImageSrc: 'assets/desktop_images/team_images/taylor_khan.jpg',
+		profileImageSrc: 'images/desktop_images/team_images/taylor_khan.jpg',
 		name: "TAYLOR KHAN",
 		Role: "CODING/DESIGN",
 		Description: "In this project, I designed high-fidelity wireframes, selected colors, text, and layout styles, and handled the HTML, CSS, and JavaScript coding for the website, ensuring responsiveness and proper semantic tagging. My role encompassed both design and development, creating a cohesive and visually appealing website.",
@@ -58,7 +58,7 @@ let team = {
 	//#
 	//#red
 	moh: {
-		profileImageSrc: 'assets/desktop_images/team_images/taylor_khan.jpg',
+		profileImageSrc: 'images/desktop_images/team_images/mo.jpg',
 		name: "MOH ZARANDAH",
 		Role: "DEVELOPEMENT/DESIGN",
 		Description: "My role in this project included creating the video's intro logo and developing the website. I designed the logo for the video and handled the HTML, CSS, and JavaScript coding for the website, ensuring responsiveness and proper semantic tagging.",
@@ -66,14 +66,14 @@ let team = {
 	//#
 	//#yellow
 	mirdan: {
-		profileImageSrc: 'assets/desktop_images/team_images/taylor_khan.jpg',
+		profileImageSrc: 'images/desktop_images/team_images/Mirdan.jpg',
 		name: "MIRDAN ASSI",
 		Role: "RESEARCH/CONTENT CREATOR",
 		Description: "In this project, I conducted research, curated content, selected images, and did some coding to create an informative and visually appealing website for Fanshawe's Interactive Media Design program and Level 4 students' portfolios.",
 	},	//#
 	//#green
 	jason: {
-		profileImageSrc: 'assets/desktop_images/team_images/taylor_khan.jpg',
+		profileImageSrc: 'images/desktop_images/team_images/jason_diff.jpg',
 		name: "JASON DIFUNTORUM",
 		Role: "VIDEOGRAPHER",
 		Description: "My primary role in this project was to create a compelling video that showcased the project's concept using visuals, including images and short videos, accompanied by music. I also assisted in selecting visuals for the website and contributed to some coding tasks to ensure a seamless user experience.",

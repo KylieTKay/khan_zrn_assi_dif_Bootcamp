@@ -11,7 +11,6 @@
         href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@300;400;500;600;700;800;900&family=Prompt:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet">
-    <!-- <link href="css/eventinfo.css" rel="stylesheet"> -->
     <link href="css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <script src="https://kit.fontawesome.com/fe8842756b.js" crossorigin="anonymous"></script>
@@ -19,6 +18,7 @@
 </head>
 
 <body>
+    <h1 class="hidden">index page</h1>
     <div id="index-background">
         <header>
             <div class="main-header">
@@ -27,357 +27,440 @@
                 </button>
                 <nav class="mainNav grid" id="burger-con">
                     <menu id="burger-menu" class="col-span-full">
-                        <a class="menuItem" href="index.html">PORTFOLIOS</a>
-                        <a class="menuItem" href="index.html">FEATURES</a>
-                        <a class="menuItem" href="index.html">SHOWCASE</a>
-                        <a class="menuItem" href="index.html">EVENT INFO</a>
-                        <a class="menuItem" href="aboutUs.html">ABOUT THE TEAM</a>
+                        <li class="menuItem"><a href="#student-portfolios">PORTFOLIOS</a>
+                        </li>
+                        <li class="menuItem"><a href="#featured-work">FEATURES</a>
+                        </li>
+                        <li class="menuItem"><a href="#showcase">SHOWCASE</a>
+                        </li>
+                        <li class="menuItem"><a href="eventinfo.html">EVENT INFO</a>
+                        </li>
+                        <li class="menuItem"><a href="aboutus.html">ABOUT THE TEAM</a>
+                        </li>
                     </menu>
                 </nav>
                 <div id="logoCon" class="grid">
-                    <a class="l-col-start-1 l-col-end-8 m-col-span-full" href=""><img src="images/logoWhite.svg" alt=""></a>
+                    <a class="l-col-start-1 l-col-end-8 m-col-span-full"
+                        href="https://www.fanshawec.ca/programs/idp3-interactive-media-design/next"><img
+                            src="images/logoWhite.svg" alt=""></a>
                 </div>
                 <div id="logoMobile">
-                    <a href=""><img src="images/logoMobile.svg" alt=""></a>
+                    <a href="https://www.fanshawec.ca/programs/idp3-interactive-media-design/next"><img
+                            src="images/logoMobile.svg" alt=""></a>
                 </div>
-    
+
             </div>
         </header>
         <main>
-        <div id="hero-img" class="grid">
-            <a class="col-start-2 col-end-4 m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-6" href="">
-                <div class="white-box-button">View Details</div>
-            </a>
-        </div>
-    
-        <section class="program-description grid">
-            <div class="title drkMode col-span-full l-col-span-full">
-            <h2>PROGRAM DESCRIPTION</h2>
-            <p class="body">
-                The world of new media is bursting with countless career possibilities that challenge your imagination and offer an impactful and enjoyable entertainment experience to the audience. If you aspire to a career in creating awe-inspiring content, the Interactive Media Design program can equip you with the essential skills to translate your creativity into digital media design, development, and production.
-            </p>
-        </div>
-        
-    
-        <div class="sectionText drkMode col-span-full">
-            <menu class="programFeatures">
-              <div class="feature drkMode">
-                <div class="icon"><i class="fa-solid fa-network-wired"></i></div>
-                
-                <div class="flex-item">
-                  <h3>Web Design</h3>
-                  <p class="para">Web design is the process of planning, conceptualizing, and implementing the plan for designing a website in a way that is functional and offers a good user experience.</p>
+            <div id="hero-img" class="grid">
+                <div class="col-start-2 col-end-4 m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-6 white-box-button">
+                    <a href="eventinfo.html">View Details</a>
                 </div>
-              </div>
-              
-              <div class="feature drkMode">
-                <div class="icon"><i class="fa-solid fa-code"></i></div>
-                <div class="flex-item">
-                  <h3>Programming</h3>
-                  <p class="para">Programming is the process of giving a set of instructions to a computer to make it able to perform a particular task. It involves designing, writing, testing, and maintaining computer programs.</p>
-                </div>
-              </div>
-              
-              <div class="feature drkMode">
-                <div class="icon"><i class="fa-solid fa-pen-nib"></i></div>
-                <div class="flex-item">
-                  <h3>Animation</h3>
-                  <p class="para">Animation is the process of creating the illusion of motion and change by rapidly displaying a sequence of static images that minimally differ from each other</p>
-                </div>
-              </div>
-              
-              <div class="feature drkMode">
-                <div class="icon"><i class="fa-solid fa-film"></i></div>
-                <div class="flex-item">
-                  <h3>Video Editing</h3>
-                  <p class="para">Video editing is the process of manipulating and arranging video footage, audio elements, and visual effects to create a new piece of footage.</p>
-                </div>
-              </div>
-            </menu>
-          </div>      
-     </section>
-        <section class="student-portfolios grid drkMode">
-            <div class="title  col-span-full m-col-span-full l-col-span-full">            <h2>STUDENT PORTFOLIOS</h2>
-            <p class="body">
-               Interactive Media Design is a field of study that provides students with an expansive understanding of the processes and methods involved in conceiving, creating, and evaluating technology-mediated experiences.
-            </p>
             </div>
-            <div class="image-gallery  col-span-full m-col-span-full l-col-span-full" id="student-portfolios-gallery">
 
-                <div class="image-row">
-                    <div class="image-cell">
-                        <span class="image-title">STUDENT</span>
-                    </div>
-                    <div class="image-cell">
-                        <span class="image-title">STUDENT</span>
-                    </div>
-                    <div class="image-cell">
-                        <span class="image-title">STUDENT</span>
-                    </div>
+            <section class="program-description grid">
+                <div class="title drkMode col-span-full l-col-span-full">
+                    <h2>PROGRAM DESCRIPTION</h2>
+                    <p class="body">
+                        The world of new media is bursting with countless career possibilities that challenge your
+                        imagination and offer an impactful and enjoyable entertainment experience to the audience. If
+                        you aspire to a career in creating awe-inspiring content, the Interactive Media Design program
+                        can equip you with the essential skills to translate your creativity into digital media design,
+                        development, and production.
+                    </p>
                 </div>
-                <div class="image-row">
-                    <div class="image-cell">
-                        <span class="image-title">STUDENT</span>
-                    </div>
-                    <div class="image-cell">
-                        <span class="image-title">STUDENT</span>
-                    </div>
-                    <div class="image-cell">
-                        <span class="image-title">STUDENT</span>
-                    </div>
-                </div>
-                <div class="image-row">
-                    <div class="image-cell">
-                        <span class="image-title">STUDENT</span>
-                    </div>
-                    <div class="image-cell">
-                        <span class="image-title">STUDENT</span>
-                    </div>
-                    <div class="image-cell">
-                        <span class="image-title">STUDENT</span>
-                    </div>
-                </div>
-                <div class="image-row">
-                    <div class="image-cell">
-                        <span class="image-title">STUDENT</span>
-                    </div>
-                    <div class="image-cell">
-                        <span class="image-title">STUDENT</span>
-                    </div>
-                    <div class="image-cell">
-                        <span class="image-title">STUDENT</span>
-                    </div>
-                </div>
-                <div class="image-row">
-                    <div class="image-cell">
-                        <span class="image-title">STUDENT</span>
-                    </div>
-                    <div class="image-cell">
-                        <span class="image-title">STUDENT</span>
-                    </div>
-                    <div class="image-cell">
-                        <span class="image-title">STUDENT</span>
-                    </div>
-                </div>
-                <div class="image-row">
-                    <div class="image-cell">
-                        <span class="image-title">STUDENT</span>
-                    </div>
-                    <div class="image-cell">
-                        <span class="image-title">STUDENT</span>
-                    </div>
-                    <div class="image-cell">
-                        <span class="image-title">STUDENT</span>
-                    </div>
-                </div>
-                <div class="image-row">
-                    <div class="image-cell">
-                        <span class="image-title">STUDENT</span>
-                    </div>
-                    <div class="image-cell">
-                        <span class="image-title">STUDENT</span>
-                    </div>
-                    <div class="image-cell">
-                        <span class="image-title">STUDENT</span>
-                    </div>
-                </div>
-                <div class="image-row">
-                    <div class="image-cell">
-                        <span class="image-title">STUDENT</span>
-                    </div>
-                    <div class="image-cell">
-                        <span class="image-title">STUDENT</span>
-                    </div>
-                    <div class="image-cell">
-                        <span class="image-title">STUDENT</span>
-                    </div>
-                </div>
-                <div class="image-row">
-                    <div class="image-cell">
-                        <span class="image-title">STUDENT</span>
-                    </div>
-                    <div class="image-cell">
-                        <span class="image-title">STUDENT</span>
-                    </div>
-                    <div class="image-cell">
-                        <span class="image-title">STUDENT</span>
-                    </div>
-                </div>
-                <div class="image-row">
-                    <div class="image-cell">
-                        <span class="image-title">STUDENT</span>
-                    </div>
-                    <div class="image-cell">
-                        <span class="image-title">STUDENT</span>
-                    </div>
-                    <div class="image-cell">
-                        <span class="image-title">STUDENT</span>
-                    </div>
-                </div>
-                <div class="image-row">
-                    <div class="image-cell">
-                        <span class="image-title">STUDENT</span>
-                    </div>
-                    <div class="image-cell">
-                        <span class="image-title">STUDENT</span>
-                    </div>
-                    <div class="image-cell">
-                        <span class="image-title">STUDENT</span>
-                    </div>
-                </div>
-                <div class="image-row">
-                    <div class="image-cell">
-                        <span class="image-title">STUDENT</span>
-                    </div>
-            </div>
-            
-        </section>
-    
-        <section class="features drkMode grid">
-            <div class="title col-span-full m-col-span-full l-col-span-full">
-            <h2>FEATURES</h2>
-            <p class="body">
-                Interactive Media Design is a field of study that provides students with an expansive understanding of the processes and methods involved in conceiving, creating, and evaluating technology-mediated experiences.
-            </p>
-            </div>
-            <div id="featureGallery" class="image-gallery col-span-full m-col-span-full l-col-span-full">
-                <h3 class="title grey-text">PROFESSOR PICKS</h3><div class="image-row stack-gallery">
-                    
-                    <img src="images/Placement-Area-1.png" alt="Image 1">
-                    <img src="images/responsive-images/project_code2_afyawk/project_code2_afyawk_c_scale,w_640.jpg" alt="Image 2">
-                    <img src="images/Placement-Area-1.png" alt="Image 3">
-                    <img src="images/Placement-Area-1.png" alt="Image 3">
-                </div
-                ><h3 class="title grey-text">PROJECT CASE STUDIES</h3>
-                <div class="image-row scroll-gallery">
-                    <img src="images/Placement-Area-1.png" alt="Image 4">
-                    <img src="images/Placement-Area-1.png" alt="Image 5">
-                    <img src="images/Placement-Area-1.png" alt="Image 6"
-                    ><img src="images/Placement-Area-1.png" alt="Image 4">
-                    <img src="images/Placement-Area-1.png" alt="Image 5">
-                    <img src="images/Placement-Area-1.png" alt="Image 6">
-                </div>
-                <h3 class=" title grey-text">STUDENT DEMOS</h3>
-                <div class="image-row stack-gallery">
-                    <img src="images/Placement-Area-1.png" alt="Image 4">
-                    <img src="images/Placement-Area-1.png" alt="Image 5">
-                    <img src="images/Placement-Area-1.png" alt="Image 6">
-                    <img src="images/Placement-Area-1.png" alt="Image 6">
 
-                </div>
-            </div>
-        </section>
-    
-    <section class="graduates">
-        <div class="title grid drkMode">
-            <h2>SENDING OFF OUR GRADUATES</h2>
-            <h3>
-                Completing their finals in our program, our level 4 students.....
-            </h3>
-        </div>
-        
-        <div class="image-section grid">
-            <div class="clientProject col-span-full m-col-start-2 m-col-end-11 l-col-start-7 l-col-end-13">
 
-                <h2>LEVEL 4 CLIENT PROJECT</h2>
-                <h3>In Partnership with [company]</h3>
-    
-                <p class="body">What is Bipolar Disorder?</p>
-                  <p>Bipolar disorder is a mental health condition that causes unusual shifts in mood, energy, and activity levels. It is also known as manic-depressive illness or manic depression
-                </p> 
-                    
-                <p class="body">Our Client</p>
-                    <p>The client is an organization that provides mental health services to individuals with bipolar disorder. They aim to improve the functional ability of their clients and help them manage their symptoms through therapy and medication.<br>The Interactive Media Design program aims to develop an interactive media platform that educates people about bipolar disorder. The platform will allow users to engage with the content and provide feedback, making them active participants in the learning process.<br>The IDP students developed a project that has been successful in educating people about bipolar disorder. The program has received positive feedback from users who have reported feeling more informed and supported. The program has also been recognized by mental health organizations for its effectiveness in educating people about bipolar disorder.
-                </p>
-            </div>
-        </div>
-        </section>
-    
-        <section class="testimonials">
-            <div class="card-container">
-            <div class="card">
-                <img src="assets/desktop_images/team_images/jason_diff.jpg" alt="Image 1" class="textbox-img">
-                <input id="ch1" type="checkbox">
-                <h2>JASON DIFUNTORUM</h2>
-                <h3>Graduate</h3>
-                <p>Fanshawe College has been a true blessing in my life. The welcoming environment and diverse student body made it a second home for me.</p>
-                <div class="content">
-                    <p>Thanks to the guidance of my professors, I discovered my passion for the coding and designing industry. Fanshawe's program equipped me with the knowledge and skills to make a positive impact on the world. These years will always hold a special place in my heart</p>
-                    <label for="ch1">Show Less</label>
+                <div class="sectionText drkMode col-span-full">
+                    <menu class="programFeatures">
+                        <li>
+                            <div class="feature drkMode">
+                                <div class="icon"><i class="fa-solid fa-network-wired"></i></div>
+
+                                <div class="flex-item">
+                                    <h3>Web Design</h3>
+                                    <p class="para">Web design is the process of planning, conceptualizing, and
+                                        implementing
+                                        the plan for designing a website in a way that is functional and offers a good
+                                        user
+                                        experience.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="feature drkMode">
+                                <div class="icon"><i class="fa-solid fa-code"></i></div>
+                                <div class="flex-item">
+                                    <h3>Programming</h3>
+                                    <p class="para">Programming is the process of giving a set of instructions to a
+                                        computer
+                                        to make it able to perform a particular task. It involves designing, writing,
+                                        testing, and maintaining computer programs.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="feature drkMode">
+                                <div class="icon"><i class="fa-solid fa-pen-nib"></i></div>
+                                <div class="flex-item">
+                                    <h3>Animation</h3>
+                                    <p class="para">Animation is the process of creating the illusion of motion and
+                                        change
+                                        by rapidly displaying a sequence of static images that minimally differ from
+                                        each
+                                        other</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="feature drkMode">
+                                <div class="icon"><i class="fa-solid fa-film"></i></div>
+                                <div class="flex-item">
+                                    <h3>Video Editing</h3>
+                                    <p class="para">Video editing is the process of manipulating and arranging video
+                                        footage, audio elements, and visual effects to create a new piece of footage.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </menu>
                 </div>
-                <label for="ch1">Show More</label>
-            </div>
-            
-            <div class="card">
-                <img src="assets/desktop_images/team_images/taylor_khan.jpg" alt="Image 2" class="textbox-img">
-                <input id="ch2" type="checkbox">
-                <h2>TAYLOR KHAN</h2>
-                <h3>Graduate</h3>
-                <p>Fanshawe is where my dreams took flight. The supportive community of fellow artists and professors made my time studying fine arts unforgettable. I found not just mentors but lifelong friends who share my passion.</p>
-                <div class="content">
-                    <p>Fanshawe's fine Interactive Media design program not only honed my skills but also ignited my creativity, and I'm forever grateful for that.</p>
-                    <label for="ch2">Show Less</label>
+            </section>
+            <section id="student-portfolios" class="student-portfolios grid drkMode">
+                <div class="title  col-span-full m-col-span-full l-col-span-full">
+                    <h2>STUDENT PORTFOLIOS</h2>
+                    <p class="body">
+                        Interactive Media Design is a field of study that provides students with an expansive
+                        understanding of the processes and methods involved in conceiving, creating, and evaluating
+                        technology-mediated experiences.
+                    </p>
                 </div>
-                <label for="ch2">Show More</label>
-            </div>
-            
-            <div class="card">
-                <img src="assets/desktop_images/team_images/Mirdan.jpg" alt="Image 3" class="textbox-img">
-                <input id="ch3" type="checkbox">
-                <h2>MIRDAN ASSI</h2>
-                <h3>Graduate</h3>
-                <p>Fanshawe has been a game-changer for me. The friendships I formed there are nothing short of family now.</p>
-                <div class="content">
-                    <p>My professors were not just teachers but guiding lights in my journey. Fanshawe's Interactive Media design program set the foundation for my career, and I will forever cherish the memories I made during my time there.</p>
-                    <label for="ch3">Show Less</label>
+                <div class="image-gallery  col-span-full m-col-span-full l-col-span-full"
+                    id="student-portfolios-gallery">
+
+                    <div class="image-row">
+                        <div class="image-cell">
+                            <span class="image-title">STUDENT</span>
+                        </div>
+                        <div class="image-cell">
+                            <span class="image-title">STUDENT</span>
+                        </div>
+                        <div class="image-cell">
+                            <span class="image-title">STUDENT</span>
+                        </div>
+                    </div>
+                    <div class="image-row">
+                        <div class="image-cell">
+                            <span class="image-title">STUDENT</span>
+                        </div>
+                        <div class="image-cell">
+                            <span class="image-title">STUDENT</span>
+                        </div>
+                        <div class="image-cell">
+                            <span class="image-title">STUDENT</span>
+                        </div>
+                    </div>
+                    <div class="image-row">
+                        <div class="image-cell">
+                            <span class="image-title">STUDENT</span>
+                        </div>
+                        <div class="image-cell">
+                            <span class="image-title">STUDENT</span>
+                        </div>
+                        <div class="image-cell">
+                            <span class="image-title">STUDENT</span>
+                        </div>
+                    </div>
+                    <div class="image-row">
+                        <div class="image-cell">
+                            <span class="image-title">STUDENT</span>
+                        </div>
+                        <div class="image-cell">
+                            <span class="image-title">STUDENT</span>
+                        </div>
+                        <div class="image-cell">
+                            <span class="image-title">STUDENT</span>
+                        </div>
+                    </div>
+                    <div class="image-row">
+                        <div class="image-cell">
+                            <span class="image-title">STUDENT</span>
+                        </div>
+                        <div class="image-cell">
+                            <span class="image-title">STUDENT</span>
+                        </div>
+                        <div class="image-cell">
+                            <span class="image-title">STUDENT</span>
+                        </div>
+                    </div>
+                    <div class="image-row">
+                        <div class="image-cell">
+                            <span class="image-title">STUDENT</span>
+                        </div>
+                        <div class="image-cell">
+                            <span class="image-title">STUDENT</span>
+                        </div>
+                        <div class="image-cell">
+                            <span class="image-title">STUDENT</span>
+                        </div>
+                    </div>
+                    <div class="image-row">
+                        <div class="image-cell">
+                            <span class="image-title">STUDENT</span>
+                        </div>
+                        <div class="image-cell">
+                            <span class="image-title">STUDENT</span>
+                        </div>
+                        <div class="image-cell">
+                            <span class="image-title">STUDENT</span>
+                        </div>
+                    </div>
+                    <div class="image-row">
+                        <div class="image-cell">
+                            <span class="image-title">STUDENT</span>
+                        </div>
+                        <div class="image-cell">
+                            <span class="image-title">STUDENT</span>
+                        </div>
+                        <div class="image-cell">
+                            <span class="image-title">STUDENT</span>
+                        </div>
+                    </div>
+                    <div class="image-row">
+                        <div class="image-cell">
+                            <span class="image-title">STUDENT</span>
+                        </div>
+                        <div class="image-cell">
+                            <span class="image-title">STUDENT</span>
+                        </div>
+                        <div class="image-cell">
+                            <span class="image-title">STUDENT</span>
+                        </div>
+                    </div>
+                    <div class="image-row">
+                        <div class="image-cell">
+                            <span class="image-title">STUDENT</span>
+                        </div>
+                        <div class="image-cell">
+                            <span class="image-title">STUDENT</span>
+                        </div>
+                        <div class="image-cell">
+                            <span class="image-title">STUDENT</span>
+                        </div>
+                    </div>
+                    <div class="image-row">
+                        <div class="image-cell">
+                            <span class="image-title">STUDENT</span>
+                        </div>
+                        <div class="image-cell">
+                            <span class="image-title">STUDENT</span>
+                        </div>
+                        <div class="image-cell">
+                            <span class="image-title">STUDENT</span>
+                        </div>
+                    </div>
+                    <div class="image-row">
+                        <div class="image-cell">
+                            <span class="image-title">STUDENT</span>
+                        </div>
+                    </div>
                 </div>
-                <label for="ch3">Show More</label>
-            </div> 
-            </div>       
-        </section>
+            </section>
+
+            <section id="featured-work" class="features drkMode grid">
+                <div class="title col-span-full m-col-span-full l-col-span-full">
+                    <h2>FEATURES</h2>
+                    <p class="body">
+                        Interactive Media Design is a field of study that provides students with an expansive
+                        understanding of the processes and methods involved in conceiving, creating, and evaluating
+                        technology-mediated experiences.
+                    </p>
+                </div>
+                <div id="featureGallery" class="image-gallery col-span-full m-col-span-full l-col-span-full">
+                    <h3 class="title grey-text">PROFESSOR PICKS</h3>
+                    <div class="image-row stack-gallery">
+
+                        <img src="images/Placement-Area-1.png" alt="Image 1">
+                        <img src="images/responsive-images/project_code2_afyawk/project_code2_afyawk_c_scale,w_640.jpg"
+                            alt="Image 2">
+                        <img src="images/Placement-Area-1.png" alt="Image 3">
+                        <img src="images/Placement-Area-1.png" alt="Image 3">
+                    </div>
+                    <h3 class="title grey-text">PROJECT CASE STUDIES</h3>
+                    <div class="image-row scroll-gallery">
+                        <img src="images/Placement-Area-1.png" alt="Image 4">
+                        <img src="images/Placement-Area-1.png" alt="Image 5">
+                        <img src="images/Placement-Area-1.png" alt="Image 6"><img src="images/Placement-Area-1.png"
+                            alt="Image 4">
+                        <img src="images/Placement-Area-1.png" alt="Image 5">
+                        <img src="images/Placement-Area-1.png" alt="Image 6">
+                    </div>
+                    <h3 class=" title grey-text">STUDENT DEMOS</h3>
+                    <div class="image-row stack-gallery">
+                        <img src="images/Placement-Area-1.png" alt="Image 4">
+                        <img src="images/Placement-Area-1.png" alt="Image 5">
+                        <img src="images/Placement-Area-1.png" alt="Image 6">
+                        <img src="images/Placement-Area-1.png" alt="Image 6">
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="showcase" class="graduates">
+                <div class="title grid drkMode">
+                    <h2>SENDING OFF OUR GRADUATES</h2>
+                    <h3>
+                        Completing their finals in our program, our level 4 students.....
+                    </h3>
+                </div>
+
+                <div class="image-section grid">
+                    <div class="clientProject col-span-full m-col-start-2 m-col-end-11 l-col-start-7 l-col-end-13">
+
+                        <h2>LEVEL 4 CLIENT PROJECT</h2>
+                        <h3>In Partnership with [company]</h3>
+
+                        <p class="body">What is Bipolar Disorder?</p>
+                        <p>Bipolar disorder is a mental health condition that causes unusual shifts in mood, energy, and
+                            activity levels. It is also known as manic-depressive illness or manic depression
+                        </p>
+
+                        <p class="body">Our Client</p>
+                        <p>The client is an organization that provides mental health services to individuals with
+                            bipolar disorder. They aim to improve the functional ability of their clients and help them
+                            manage their symptoms through therapy and medication.<br>The Interactive Media Design
+                            program aims to develop an interactive media platform that educates people about bipolar
+                            disorder. The platform will allow users to engage with the content and provide feedback,
+                            making them active participants in the learning process.<br>The IDP students developed a
+                            project that has been successful in educating people about bipolar disorder. The program has
+                            received positive feedback from users who have reported feeling more informed and supported.
+                            The program has also been recognized by mental health organizations for its effectiveness in
+                            educating people about bipolar disorder.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="testimonials">
+                <div class="card-container">
+                    <div class="card">
+                        <img src="assets/desktop_images/team_images/jason_diff.jpg" alt="Image 1" class="textbox-img">
+                        <input id="ch1" type="checkbox">
+                        <h2>JASON DIFUNTORUM</h2>
+                        <h3>Graduate</h3>
+                        <p>Fanshawe College has been a true blessing in my life. The welcoming environment and diverse
+                            student body made it a second home for me.</p>
+                        <div class="content">
+                            <p>Thanks to the guidance of my professors, I discovered my passion for the coding and
+                                designing industry. Fanshawe's program equipped me with the knowledge and skills to make
+                                a positive impact on the world. These years will always hold a special place in my heart
+                            </p>
+                            <label for="ch1">Show Less</label>
+                        </div>
+                        <label for="ch1">Show More</label>
+                    </div>
+
+                    <div class="card">
+                        <img src="assets/desktop_images/team_images/taylor_khan.jpg" alt="Image 2" class="textbox-img">
+                        <input id="ch2" type="checkbox">
+                        <h2>TAYLOR KHAN</h2>
+                        <h3>Graduate</h3>
+                        <p>Fanshawe is where my dreams took flight. The supportive community of fellow artists and
+                            professors made my time studying fine arts unforgettable. I found not just mentors but
+                            lifelong friends who share my passion.</p>
+                        <div class="content">
+                            <p>Fanshawe's fine Interactive Media design program not only honed my skills but also
+                                ignited my creativity, and I'm forever grateful for that.</p>
+                            <label for="ch2">Show Less</label>
+                        </div>
+                        <label for="ch2">Show More</label>
+                    </div>
+
+                    <div class="card">
+                        <img src="assets/desktop_images/team_images/Mirdan.jpg" alt="Image 3" class="textbox-img">
+                        <input id="ch3" type="checkbox">
+                        <h2>MIRDAN ASSI</h2>
+                        <h3>Graduate</h3>
+                        <p>Fanshawe has been a game-changer for me. The friendships I formed there are nothing short of
+                            family now.</p>
+                        <div class="content">
+                            <p>My professors were not just teachers but guiding lights in my journey. Fanshawe's
+                                Interactive Media design program set the foundation for my career, and I will forever
+                                cherish the memories I made during my time there.</p>
+                            <label for="ch3">Show Less</label>
+                        </div>
+                        <label for="ch3">Show More</label>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer id="lightFooter">
             <div class="footer-container">
                 <div class="footer-logo">
-                    <img src="images/logoWhite.svg">
+                    <a href="https://www.fanshawec.ca/programs/idp3-interactive-media-design/next"><img
+                            src="images/logoBlack.svg" alt="logo"></a>
                 </div>
                 <div class="footer-socialmedia">
                     <h3>SOCIALS</h3>
-                    <menu #footSocial>
-                     <a href="">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a><a href="">
-                        <i
-                            class="fa-brands fa-instagram"></i>
-                        </a><a href="">
-                                <i class="fa-brands fa-behance"></i>
-                            </a><a
-                        href=""><i class="fa-brands fa-youtube"></i>
-                    </a><a href="">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>    
+                    <menu id="footSocial">
+
+                        <li>
+                            <a href="https://www.facebook.com/FanshaweSDPA/">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/fanshawesdpa/?hl=en">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/FanshaweSDPA">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@Fanshawe-College"><i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.linkedin.com/company/fanshawe-college---school-of-digital-and-performing-arts/about/">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
                     </menu>
-                   
+
                 </div>
-                <div class="footer-nav"> 
+                <div class="footer-nav">
                     <h3>CONTACT US</h3>
-                    <a href="#"><h4>Address</h4></a>
-                    <p class= pDrkMode">137 Dundas St.
+                    <a href="#">
+                        <h4>Address</h4>
+                    </a>
+                    <p class="pDrkMode">137 Dundas St.
                         Fanshawe LDA Building
                         London, ON N6A 1E9
                     </p>
-                    <a href="#"><h4>Email</h4></a>
-                    <p class= pDrkMode">
+                    <a href="#">
+                        <h4>Email</h4>
+                    </a>
+                    <p class="pDrkMode">
                         mediainquiries@fanshaweonline.ca
                     </p>
-                    <a href="#"><h4>Tel No.</h4></a>
-                    <p class= pDrkMode">
+                    <a href="#">
+                        <h4>Tel No.</h4>
+                    </a>
+                    <p class="pDrkMode">
                         (226) 666 999
                     </p>
                 </div>
                 <div class="copyright">
                     <p>2023 Fanshawe College © All Rights Reserved</p>
                 </div>
+            </div>
         </footer>
     </div>
     <script src="js/main.js"></script>

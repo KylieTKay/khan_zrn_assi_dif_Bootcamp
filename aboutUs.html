@@ -14,7 +14,6 @@
         href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@300;400;500;600;700;800;900&family=Prompt:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet">
-    <!-- <link href="css/eventinfo.css" rel="stylesheet"> -->
     <link href="css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <script src="https://kit.fontawesome.com/fe8842756b.js" crossorigin="anonymous"></script>
@@ -22,6 +21,8 @@
 </head>
 
 <body>
+    <h1 class="hidden">about the team page</h1>
+
     <div id="about-background">
     <header>
         <div class="main-header">
@@ -30,15 +31,15 @@
             </button>
             <nav class="mainNav grid" id="burger-con">
                 <menu id="burger-menu" class="col-span-full">
-                    <a class="menuItem" href="index.html">HOME</a>
-                    <a class="menuItem" href="eventinfo.html">EVENT INFO</a>
+                    <li class="menuItem"><a href="index.html">HOME</a></li>
+                    <li class="menuItem"><a href="eventinfo.html">EVENT INFO</a></li>
                 </menu>
             </nav>
             <div id="logoCon" class="grid">
-                <a class="l-col-start-1 l-col-end-8 m-col-span-full" href=""><img src="images/logoWhite.svg" alt=""></a>
+                <a class="l-col-start-1 l-col-end-8 m-col-span-full" href="https://www.fanshawec.ca/programs/idp3-interactive-media-design/next"><img src="images/logoWhite.svg" alt=""></a>
             </div>
             <div id="logoMobile">
-                <a href=""><img src="images/logoMobile.svg" alt=""></a>
+                <a href="https://www.fanshawec.ca/programs/idp3-interactive-media-design/next"><img src="images/logoMobile.svg" alt=""></a>
             </div>
 
         </div>
@@ -67,13 +68,13 @@
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
                     labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
                     et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-                    amet.<br />Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
+                    amet.<br>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
                 </p>
             </div>
             <ul id="teamCardCon">
                 <!-- TAYLOR -->
                 <li>
-                    <a data-member="taylor" class="teamCard" id="taylorBtn2" href="#lightbox">
+                    <a data-member="taylor" class="teamCard" id="taylorBtn2">
                         <div id="taylorImg" class="teamImg">
                             <div class="overlay">
                             </div>
@@ -81,10 +82,10 @@
                         <h3 id="taylorKhan" class="drkMode">
                             Taylor<br>Khan
                         </h3>
-                        <ul class="meetTeamSocials">
+                        <div class="meetTeamSocials">
                             <i class="fa-brands fa-behance"></i>
                             <i class="fa-brands fa-instagram"></i>
-                        </ul>
+                        </div>
                     </a>
                 </li>
                 <!-- MOH -->
@@ -96,10 +97,10 @@
                         <h3 id="mohZrn" class="drkMode">
                             Moh<br>Zrn
                         </h3>
-                        <ul class="meetTeamSocials drkMode">
+                        <div class="meetTeamSocials drkMode">
                             <i class="fa-brands fa-linkedin"></i>
                             <i class="fa-brands fa-instagram"></i>
-                        </ul>
+                        </div>
                     </a></li>
                 <!-- JASON -->
                 <li><a data-member="jason" class="teamCard" id="jasonBtn2">
@@ -110,10 +111,10 @@
                         <h3 id="jasonDif" class="drkMode">
                             Jason<br>Dif
                         </h3>
-                        <ul class="meetTeamSocials drkMode">
+                        <div class="meetTeamSocials drkMode">
                             <i class="fa-brands fa-linkedin"></i>
                             <i class="fa-brands fa-instagram"></i>
-                        </ul>
+                        </div>
                     </a></li>
                 <!-- MIRDAN -->
                 <li><a data-member="mirdan" class="teamCard" id="mirdanBtn2">
@@ -124,10 +125,10 @@
                         <h3 id="mirdanAssi" class="drkMode">
                             Mirdan<br>Assi
                         </h3>
-                        <ul class="meetTeamSocials drkMode">
+                        <div class="meetTeamSocials drkMode">
                             <i class="fa-brands fa-facebook"></i>
                             <i class="fa-brands fa-instagram"></i>
-                        </ul>
+                        </div>
                     </a></li>
             </ul>
         </section>
@@ -141,11 +142,11 @@
                 <div class="teamCardText drkMode">
                     <h5>TAYLOR KHAN</h5>
                     <h3>GROUP ROLE</h3>
-                    <ul class="meetTeamSocials">
+                    <div class="meetTeamSocials">
                         <i class="fa-brands fa-behance"></i>
                         <i class="fa-brands fa-instagram"></i>
                         <i class="fa-solid fa-link"></i>
-                    </ul>
+                    </div>
                     <button data-member="taylor" id="taylorBtn" class="viewTeamBtn">
                         <p class="body" id="taylorButtonText">VIEW</p>
                     </button>
@@ -164,11 +165,11 @@
                 <div class="teamCardText drkMode">
                     <h5>MOH ZRN</h5>
                     <h3>GROUP ROLE</h3>
-                    <ul class="meetTeamSocials">
+                    <div class="meetTeamSocials">
                         <i class="fa-brands fa-linkedin"></i>
                         <i class="fa-brands fa-instagram"></i>
                         <i class="fa-solid fa-link"></i>
-                    </ul>
+                    </div>
                     <button data-member="moh" id="mohBtn" class="viewTeamBtn">
                         <p class="body" id="mohButtonText">VIEW</p>
                     </button>
@@ -188,11 +189,11 @@
                 <div class="teamCardText drkMode">
                     <h5>JASON DIF</h5>
                     <h3>GROUP ROLE</h3>
-                    <ul class="meetTeamSocials">
+                    <div class="meetTeamSocials">
                         <i class="fa-brands fa-linkedin"></i>
                         <i class="fa-brands fa-instagram"></i>
                         <i class="fa-solid fa-link"></i>
-                    </ul>
+                    </div>
                     <button data-member="jason" id="jasonBtn" class="viewTeamBtn">
                         <p class="body" id="jasonButtonText">VIEW</p>
                     </button>
@@ -210,11 +211,11 @@
                 <div class="teamCardText drkMode">
                     <h5>MIRDAN ASSI</h5>
                     <h3>GROUP ROLE</h3>
-                    <ul class="meetTeamSocials">
+                    <div class="meetTeamSocials">
                         <i class="fa-brands fa-facebook"></i>
                         <i class="fa-brands fa-instagram"></i>
                         <i class="fa-solid fa-link"></i>
-                    </ul>
+                    </div>
                     <button data-member="mirdan" id="mirdanBtn" class="viewTeamBtn">
                         <p class="body" id="mirdanButtonText">VIEW</p>
                     </button>
@@ -231,60 +232,82 @@
     <footer id="darkFooter" class="drkMode">
         <div class="footer-container">
             <div class="footer-logo">
-                <img src="images/logoWhite.svg">
+                <a href="https://www.fanshawec.ca/programs/idp3-interactive-media-design/next"><img
+                        src="images/logoWhite.svg" alt="logo"></a>
             </div>
             <div class="footer-socialmedia">
                 <h3>SOCIALS</h3>
-                <menu #footSocial>
-                 <a href="">
-                    <i class="fa-brands fa-facebook"></i>
-                </a><a href="">
-                    <i
-                        class="fa-brands fa-instagram"></i>
-                    </a><a href="">
-                            <i class="fa-brands fa-behance"></i>
-                        </a><a
-                    href=""><i class="fa-brands fa-youtube"></i>
-                </a><a href="">
+                <menu id="footSocial">
+                        
+                    <li>
+                    <a href="https://www.facebook.com/FanshaweSDPA/">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    </li>
+                    <li>
+                    <a href="https://www.instagram.com/fanshawesdpa/?hl=en">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    </li>
+                    <li>
+                    <a href="https://twitter.com/FanshaweSDPA">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    </li>
+                    <li>
+                    <a href="https://www.youtube.com/@Fanshawe-College"><i class="fa-brands fa-youtube"></i>
+                    </a>
+                    </li>
+                    <li>
+                    <a 
+                        href="https://www.linkedin.com/company/fanshawe-college---school-of-digital-and-performing-arts/about/">
                         <i class="fa-brands fa-linkedin"></i>
-                    </a>    
+                    </a>
+                    </li>
                 </menu>
-               
+
             </div>
-            <div class="footer-nav"> 
+            <div class="footer-nav">
                 <h3>CONTACT US</h3>
-                <a href="#"><h4>Address</h4></a>
-                <p class= pDrkMode">137 Dundas St.
+                <a href="#">
+                    <h4>Address</h4>
+                </a>
+                <p class="pDrkMode">137 Dundas St.
                     Fanshawe LDA Building
                     London, ON N6A 1E9
                 </p>
-                <a href="#"><h4>Email</h4></a>
-                <p class= pDrkMode">
+                <a href="#">
+                    <h4>Email</h4>
+                </a>
+                <p class="pDrkMode">
                     mediainquiries@fanshaweonline.ca
                 </p>
-                <a href="#"><h4>Tel No.</h4></a>
-                <p class= pDrkMode">
+                <a href="#">
+                    <h4>Tel No.</h4>
+                </a>
+                <p class="pDrkMode">
                     (226) 666 999
                 </p>
             </div>
             <div class="copyright">
                 <p>2023 Fanshawe College © All Rights Reserved</p>
             </div>
+        </div>
     </footer>
     <div id="lightBox" class="hidden grid">
         <h2 class="hidden">Pop up Team Card</h2>
         <button id="closeBtn"><i class="fa-solid fa-circle-xmark"></i></button>
-            <img id="teamProfileImg" src="" alt="">
+            <img id="teamProfileImg" src="/images/Placement-Area-1.png" alt="">
             <p class="body pdrkMode" id="teamPara">
             </p>
             <div id="profileText" class="drkMode">
             <h5 id="studentNameTag"></h5>
             <h2 id="groupRole"></h2>
-            <ul class="meetTeamSocials">
+            <div class="meetTeamSocials">
                 <i class="fa-brands fa-instagram"></i>
                 <i class="fa-brands fa-instagram"></i>
                 <i class="fa-brands fa-instagram"></i>
-            </ul></div>
+            </div></div>
             <div class="portfolioPreview">
                 <img src="assets/desktop_images/team_rull_imgs/k_wireframe1.jpg" alt="">
                 <img src="assets/desktop_images/team_rull_imgs/k_wireframe2.jpg" alt="">
