@@ -548,7 +548,8 @@ label:hover {
     border-radius: 25% 25% 0 0;
 }
 #testImg1{
-    background: url(../assets/desktop_images/team_images/jason_diff.jpg);
+    background: url(../images/desktop_images/team_images/jason_diff.jpg); 
+    /* (../assets/desktop_images/team_images/jason_diff.jpg); */
 }
 
 
@@ -557,39 +558,43 @@ label:hover {
 
 
     #eventInfoHero {
-        max-width: 768px;
-        height: 845px;
+        max-width: 1920px;
+        height: fit-content;
         /* background: black; */
         background: url(../images/eventInfoHero_D.svg) no-repeat;
         background-size: contain;
+        padding-top: 44vw;
+    
         padding-bottom: 0;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: end;
+    }
+   
 
         .video-container {
-            position: relative;
-            overflow: hidden;
-            max-width: 100vw;
-            max-height: 768px;
+            /* overflow: hidden; */
+            /* max-width: 100vw; */
+            max-height: 56vw;
             width: 100%;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio (height / width) */
+            /* padding-bottom: 56.25%;  */
+            justify-self: center;
         }
         
         .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
+            /* position: absolute; */
+            max-width: 100vw;
+            max-height: 56vw;
             width: 100%;
-            height: 100%;
         }
     
-    }
+    
 
     #eventinfoCon {
         max-width: 768px;
         height: fit-content;
-        background: linear-gradient(to top, white 40%, rgba(255, 255, 255, 0.885), transparent), url(../assets/desktop_images/industry_event_info.jpg) no-repeat;
+        background: linear-gradient(to top, white 40%, rgba(255, 255, 255, 0.885), transparent), url(../images/desktop_images/industry_event_info.jpg) no-repeat;
         background-size: cover;
         padding-top: 450px;
         padding-bottom: 50px;
@@ -749,7 +754,7 @@ label:hover {
 
 
                 #taylorImg {
-                    background: url(../assets/desktop_images/team_images/taylor_khan.jpg) no-repeat;
+                    background: url(../images/desktop_images/team_images/taylor_khan.jpg) no-repeat;
                 }
 
                 #taylorKhan {
@@ -761,7 +766,7 @@ label:hover {
                 }
 
                 #mohImg {
-                    background: url(../assets/desktop_images/team_images/mo.jpg) no-repeat;
+                    background: url(../images/desktop_images/team_images/mo.jpg) no-repeat;
                 }
 
                 #mohZrn {
@@ -773,7 +778,7 @@ label:hover {
                 }
 
                 #jasonImg {
-                    background: url(../assets/desktop_images/team_images/jason_diff.jpg) no-repeat;
+                    background: url(../images/desktop_images/team_images/jason_diff.jpg) no-repeat;
                 }
 
                 #jasonDif {
@@ -785,7 +790,7 @@ label:hover {
                 }
 
                 #mirdanImg {
-                    background: url(../assets/desktop_images/team_images/Mirdan.jpg) no-repeat;
+                    background: url(../images/desktop_images/team_images/Mirdan.jpg) no-repeat;
                 }
 
                 #mirdanAssi {
@@ -1047,12 +1052,7 @@ label:hover {
     width:40%;
     margin: 10px;
 }
-/* .mask{
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    background: url(/assets/desktop_images/profs-choices/profs-choice2.jpg);
-} */
+
 
 .features .grey-text {
     color: #A19595;
@@ -1223,6 +1223,7 @@ background: url(../assets/desktop_images/team_images/jason_diff.jpg);
         display: flex;
         justify-content: center;
         align-items: end;
+    }
         
         .video-container {
             /* position: relative; */
@@ -1240,7 +1241,7 @@ background: url(../assets/desktop_images/team_images/jason_diff.jpg);
             width: 100%;
             height: 100%;
         }
- }
+ 
     #eventinfoCon{
         max-width: 1200px;
         height: fit-content;
